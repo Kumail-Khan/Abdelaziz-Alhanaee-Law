@@ -6,7 +6,7 @@ function sidebarMenu() {
     // sidebar.style.marginLeft = "560px"
     // console.log(sidebar)
 
-    if (sidebar.style.left === "-560px" || sidebar.style.marginLeft === "") {
+    if (sidebar.style.left === "-560px" || sidebar.style.left === "") {
         console.log(sidebar.style.left)
         sidebar.style.left = "0px"
         cancel.style.display = "block"
