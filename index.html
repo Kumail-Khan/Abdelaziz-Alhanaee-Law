@@ -14,8 +14,22 @@
     <div class="container">
         <div class="header">
             <div class="header-left">
-                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu"><i class="fa-solid fa-bars" onclick="sidebarMenu()"></i></div>
+                <div class="cancel"><i class="fa-solid fa-xmark" onclick="sidebarMenu()"></i></div>
                 <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>practices</li>
+                    <li>our teams</li>
+                    <li>awards</li>
+                    <li>news and articles</li>
+                    <li>careers</li>
+                    <li>faq</li>
+                    <li>contact us</li>
+                </ul>
             </div>
             <!-- header-left end -->
             <div class="header-right">
@@ -26,8 +40,6 @@
                     <nav>
                         <hr class="line-1">
                         <hr class="line-2">
-                        <hr class="line-3">
-                        <hr class="line-4">
                     </nav>
                 </div>
                 <div class="header-right-main">
@@ -365,6 +377,9 @@
 
     </div>
     <!-- container end -->
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

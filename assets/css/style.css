@@ -13,17 +13,22 @@
     width: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 18px;
     padding-bottom: 0;
     align-items: center;
     background-color: black;
-    position: sticky; }
+    position: relative;
+    z-index: 11; }
     .header .header-left .menu {
       font-size: 35px;
-      margin-top: 350px;
       color: white;
       cursor: pointer; }
+    .header .header-left .cancel {
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+      display: none; }
     .header .header-left .search {
       font-size: 35px;
       background-color: white;
@@ -32,7 +37,29 @@
       align-items: center;
       justify-content: center;
       display: flex;
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute;
+      bottom: 0; }
+  .header .sidebar-menu {
+    width: 650px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    background-color: #5a2a14;
+    top: 0;
+    left: -560px;
+    transition: 0.3s; }
+    .header .sidebar-menu ul li {
+      list-style: none;
+      font-size: 30px;
+      font-weight: 400;
+      color: white;
+      margin-top: 15px;
+      cursor: pointer;
+      text-transform: uppercase; }
   .header .header-right {
     width: 100%; }
     .header .header-right .back-img {
@@ -44,7 +71,8 @@
   .header .header-right-top {
     position: absolute;
     top: 30px;
-    left: 250px; }
+    left: 250px;
+    z-index: 11; }
     .header .header-right-top h2 {
       color: white;
       font-weight: 300;
@@ -62,24 +90,40 @@
       .header .header-right-top nav .line-1 {
         position: absolute;
         top: -12px;
-        left: 20px;
+        left: -150px;
         color: white;
-        width: 70px;
-        height: 3px;
+        width: 230px;
+        height: 2px;
         background-color: white; }
       .header .header-right-top nav .line-2 {
         position: absolute;
         top: -12px;
         left: 225px;
         color: white;
-        width: 70px;
-        height: 3px;
+        width: 1427px;
+        height: 2px;
         background-color: white; }
-      .header .header-right-top nav .line-3 {
-        position: absolute;
-        top: -11px;
-        left: -110px;
-        color: white;
-        width: 190px; }
+  .header .header-right-main {
+    position: absolute;
+    top: 330px;
+    left: 250px;
+    color: white;
+    z-index: 5; }
+    .header .header-right-main h1 {
+      font-size: 100px;
+      font-weight: 400;
+      line-height: 90px; }
+    .header .header-right-main button {
+      padding: 17px;
+      color: black;
+      background-color: white;
+      width: 200px;
+      border: none;
+      outline: none;
+      margin-top: 60px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
