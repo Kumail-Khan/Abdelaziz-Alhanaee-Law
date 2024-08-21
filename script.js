@@ -23,7 +23,15 @@ function sidebarMenu() {
 }
 
 
+// let menu = document.querySelector(".menu")
+// let cancel = document.querySelector(".cancel")
+// let sidebarMenu = document.querySelector(".sidebar-menu")
 
+// sidebarMenu
+
+// menu.addEventListener("click", () => {
+
+// })
 
 // let menu = document.querySelector(".menu")
 // let cancel = document.querySelector(".cancel")
