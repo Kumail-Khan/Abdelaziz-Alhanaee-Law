@@ -281,12 +281,12 @@
   background-color: #1e1e1e;
   padding-top: 100px;
   padding-bottom: 100px;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .faqs .faqs-parent {
     color: white;
     display: flex;
     justify-content: center;
-    max-width: 100%;
     width: 80%;
     margin: auto; }
     .faqs .faqs-parent .faqs-section {
@@ -330,5 +330,323 @@
       right: 150px;
       bottom: -130px;
       width: 550px; }
+
+.testamonials {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 50px; }
+  .testamonials .testamonial-parent {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    .testamonials .testamonial-parent .left-testamonials {
+      width: 50%;
+      margin-left: 100px; }
+      .testamonials .testamonial-parent .left-testamonials h1 {
+        font-size: 48px;
+        font-weight: 200; }
+    .testamonials .testamonial-parent .right-testamonials {
+      width: 50%;
+      padding-right: 100px; }
+      .testamonials .testamonial-parent .right-testamonials .testamonial-1 p {
+        font-size: 30px;
+        font-weight: 300; }
+      .testamonials .testamonial-parent .right-testamonials .testamonial-1 .profile {
+        display: flex;
+        margin-top: 50px; }
+        .testamonials .testamonial-parent .right-testamonials .testamonial-1 .profile .info {
+          margin-top: 10px;
+          margin-left: 10px; }
+          .testamonials .testamonial-parent .right-testamonials .testamonial-1 .profile .info h2 {
+            font-size: 16px;
+            font-weight: 700; }
+          .testamonials .testamonial-parent .right-testamonials .testamonial-1 .profile .info p {
+            font-size: 16px; }
+      .testamonials .testamonial-parent .right-testamonials .next-buttons {
+        display: flex;
+        margin-top: 40px;
+        gap: 10px; }
+        .testamonials .testamonial-parent .right-testamonials .next-buttons p {
+          font-size: 16px;
+          cursor: pointer;
+          color: #a1a1a1; }
+          .testamonials .testamonial-parent .right-testamonials .next-buttons p:hover {
+            color: #7d7d7d; }
+
+.articles {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #f3f3f3; }
+  .articles .articles-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto; }
+    .articles .articles-section .article-header {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 100px; }
+      .articles .articles-section .article-header h1 {
+        font-size: 48px;
+        font-weight: 300;
+        color: #8E492B; }
+      .articles .articles-section .article-header button {
+        padding: 17px;
+        color: black;
+        width: 300px;
+        border: 1px solid rgba(87, 87, 87, 0.62);
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border-radius: 30px;
+        color: #707070;
+        cursor: pointer; }
+        .articles .articles-section .article-header button:hover {
+          background-color: black;
+          color: white; }
+    .articles .articles-section .article-main {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      margin-left: 100px;
+      gap: 60px; }
+      .articles .articles-section .article-main .arcticle {
+        width: 50%; }
+        .articles .articles-section .article-main .arcticle img {
+          width: 100%;
+          cursor: pointer; }
+        .articles .articles-section .article-main .arcticle h3 {
+          font-size: 18px;
+          color: #8E492B;
+          margin-top: 30px;
+          cursor: pointer; }
+        .articles .articles-section .article-main .arcticle p {
+          font-size: 25px;
+          font-weight: 300;
+          margin-top: 20px;
+          cursor: pointer; }
+    .articles .articles-section .next-buttons {
+      margin-left: 100px;
+      margin-top: 50px;
+      display: flex;
+      gap: 10px; }
+      .articles .articles-section .next-buttons p {
+        font-size: 16px;
+        cursor: pointer;
+        color: #a1a1a1; }
+        .articles .articles-section .next-buttons p:hover {
+          color: #7d7d7d; }
+
+.teams {
+  width: 100%; }
+  .teams .teams-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    .teams .teams-section .left-teams {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 100px;
+      padding-bottom: 120px;
+      background-color: #6B3117;
+      background-image: url("images/background-texture-image.jpg"); }
+      .teams .teams-section .left-teams .left-team-parent {
+        width: 70%; }
+        .teams .teams-section .left-teams .left-team-parent h1 {
+          font-size: 48px;
+          font-weight: 300;
+          color: white;
+          margin-top: 100px; }
+        .teams .teams-section .left-teams .left-team-parent .parah {
+          display: none; }
+        .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 150px;
+          border-bottom: 1px solid rgba(177, 177, 177, 0.418); }
+          .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq .left {
+            display: flex; }
+            .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq .left h2 {
+              font-size: 32px;
+              font-weight: 400;
+              color: white; }
+            .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq .left p {
+              font-size: 12px;
+              font-weight: 600;
+              color: #8E492B;
+              margin-top: 20px;
+              margin-left: 20px; }
+          .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq .right i {
+            background-color: rgba(180, 180, 180, 0.738);
+            color: #8E492B;
+            font-size: 20px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+    .teams .teams-section .right-teams {
+      width: 30%;
+      background-color: #1e1e1e;
+      position: relative; }
+      .teams .teams-section .right-teams img {
+        position: absolute;
+        bottom: 0;
+        right: 180px; }
+
+.uptodate {
+  width: 100%;
+  background-color: #1a1a1af4;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .uptodate .uptodate-section {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #1a1a1a;
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden; }
+    .uptodate .uptodate-section .style {
+      width: 75px;
+      height: 100vh;
+      position: absolute;
+      left: 0;
+      background-color: #6B3117; }
+    .uptodate .uptodate-section .child {
+      width: 70%; }
+      .uptodate .uptodate-section .child h1 {
+        color: #d6d6d6;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 30px; }
+      .uptodate .uptodate-section .child .email-section {
+        position: relative; }
+        .uptodate .uptodate-section .child .email-section input {
+          width: 100%;
+          border-radius: 40px;
+          height: 50px;
+          background-color: #1f1f1f;
+          color: #787878;
+          outline: none;
+          border: 1px solid rgba(158, 158, 158, 0.625);
+          font-size: 18px;
+          padding-left: 30px; }
+        .uptodate .uptodate-section .child .email-section button {
+          position: absolute;
+          right: 2px;
+          bottom: 1px;
+          background-color: black;
+          color: white;
+          outline: none;
+          border: none;
+          height: 48px;
+          width: 220px;
+          border-radius: 40px;
+          cursor: pointer;
+          transition: 0.1s; }
+          .uptodate .uptodate-section .child .email-section button:hover {
+            background-color: #6B3117; }
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white; }
+  .footer .footer-top {
+    margin-left: 250px;
+    padding-top: 150px; }
+    .footer .footer-top h2 {
+      color: white;
+      font-weight: 300;
+      font-size: 30px;
+      letter-spacing: 2px; }
+    .footer .footer-top p {
+      color: white;
+      font-weight: 300;
+      margin-left: 100px;
+      margin-top: 8px;
+      font-size: 18px;
+      letter-spacing: 6px; }
+    .footer .footer-top nav {
+      position: relative; }
+      .footer .footer-top nav .line-1 {
+        position: absolute;
+        top: -12px;
+        left: -150px;
+        color: white;
+        width: 230px;
+        height: 2px;
+        background-color: white; }
+      .footer .footer-top nav .line-2 {
+        position: absolute;
+        top: -12px;
+        left: 225px;
+        color: white;
+        width: 1427px;
+        height: 2px;
+        background-color: white; }
+  .footer .footer-section {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 100px; }
+    .footer .footer-section .links {
+      display: flex;
+      margin-top: 80px; }
+      .footer .footer-section .links .quick-links,
+      .footer .footer-section .links .experties-links {
+        margin-right: 150px; }
+        .footer .footer-section .links .quick-links h1,
+        .footer .footer-section .links .experties-links h1 {
+          font-size: 30px;
+          font-weight: 400;
+          margin-bottom: 50px; }
+        .footer .footer-section .links .quick-links ul li,
+        .footer .footer-section .links .experties-links ul li {
+          list-style: none;
+          margin-bottom: 15px; }
+          .footer .footer-section .links .quick-links ul li a,
+          .footer .footer-section .links .experties-links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 300; }
+            .footer .footer-section .links .quick-links ul li a:hover,
+            .footer .footer-section .links .experties-links ul li a:hover {
+              border-bottom: 1px solid white; }
+    .footer .footer-section .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-top: 50px;
+      gap: 150px; }
+      .footer .footer-section .social-media .contact-number p {
+        font-size: 30px; }
+      .footer .footer-section .social-media .social-logo img {
+        width: 50px;
+        background-color: white;
+        border-radius: 50%; }
+
+.copyright-section {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
