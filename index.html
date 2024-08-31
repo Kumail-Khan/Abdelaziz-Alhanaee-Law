@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/basic.css">
     <script src="https://kit.fontawesome.com/9fa5e4001d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -44,33 +45,22 @@
                     </nav>
                 </div>
                 <div class="slide-area">
-                    <div class="back-img"><img src="images/header-main-image.jpg" alt=""></div>
-                    <div class="header-right-main">
-                        <h1>Culturally <br> Empowered</h1>
-                        <button>Our Practices</button>
-                    </div>
+                    <img src="images/header-main-image.jpg" class="active">
+                    <img src="images/header-main-image.jpg">
+                    <img src="images/header-main-image.jpg">
                 </div>
                 <!-- slide-area end -->
-                <div class="slide-area">
-                    <div class="back-img" style="opacity: 0.5;"><img src="images/header-main-image.jpg" alt=""></div>
-                    <div class="header-right-main">
-                        <h1>Culturally <br> Empowered</h1>
-                        <button>Our Practices</button>
-                    </div>
+
+                <div class="header-right-main">
+                    <h1>Culturally <br> Empowered</h1>
+                    <button>Our Practices</button>
                 </div>
-                <!-- slide-area end -->
-                <div class="slide-area">
-                    <div class="back-img" style="opacity: 0.8;"><img src="images/header-main-image.jpg" alt=""></div>
-                    <div class="header-right-main">
-                        <h1>Culturally <br> Empowered</h1>
-                        <button>Our Practices</button>
-                    </div>
-                </div>
-                <!-- slide-area end -->
+                <!-- header-right-main end -->
+
                 <div class="slider-dots">
-                    <i class="fa-solid fa-circle" onclick="currentSlid(1)"></i>
-                    <i class="fa-solid fa-circle" onclick="currentSlid(2)"></i>
-                    <i class="fa-solid fa-circle" onclick="currentSlid(3)"></i>
+                    <i class="fa-solid fa-circle dots active" attr="0" onclick="switchImage(this)"></i>
+                    <i class="fa-solid fa-circle dots" attr="1" onclick="switchImage(this)"></i>
+                    <i class="fa-solid fa-circle dots" attr="2" onclick="switchImage(this)"></i>
                 </div>
             </div>
             <!-- header-right end -->
@@ -220,28 +210,88 @@
                 <!-- left-testamonials end -->
                 <div class="right-testamonials">
                     <div class="testamonial-section">
-                        <div class="testamonial-1">
-                            <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and eager to
-                                perform.
-                                We recommend them as one of the best Emirati Law Firms in Dubai.</p>
-                            <div class="profile">
-                                <img src="images/profile-pic.png">
-                                <div class="info">
-                                    <h2>Michael Merla</h2>
-                                    <p> Design Director</p>
+                        <div class="testamonial-section-child">
+                            <div class="testamonial-info active">
+                                <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and
+                                    eager to
+                                    perform.
+                                    We recommend them as one of the best Emirati Law Firms in Dubai.</p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png">
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p> Design Director</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- testamonial-1 end -->
-                        <div class="next-buttons">
-                            <p>01</p>
-                            <p>02</p>
-                            <p>03</p>
-                            <p>04</p>
-                            <p>05</p>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and
+                                    eager to
+                                    perform.
+                                    We recommend them as one of the best Emirati Law Firms in Dubai.</p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png">
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p> Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and
+                                    eager to
+                                    perform.
+                                    We recommend them as one of the best Emirati Law Firms in Dubai.</p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png">
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p> Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and
+                                    eager to
+                                    perform.
+                                    We recommend them as one of the best Emirati Law Firms in Dubai.</p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png">
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p> Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>The best Lawyers and Legal Consultants. Law Firm has a team who is dedicated and
+                                    eager to
+                                    perform.
+                                    We recommend them as one of the best Emirati Law Firms in Dubai.</p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png">
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p> Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
                         </div>
                     </div>
                     <!-- testamonial-section end -->
+                    <div class="next-buttons">
+                        <p>01</p>
+                        <p>02</p>
+                        <p>03</p>
+                        <p>04</p>
+                        <p>05</p>
+                    </div>
+
                 </div>
                 <!-- right-testamonials end -->
             </div>
@@ -426,6 +476,7 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,11 @@
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
+
 .header {
     display: flex;
     width: 100%;
@@ -127,16 +132,27 @@
 
     .header-right {
         width: 100%;
+        position: relative;
 
+        .slide-area {
 
-        .back-img {
-            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
 
             img {
-                object-fit: cover;
                 width: 100%;
                 height: 100vh;
+                object-fit: cover;
+                position: absolute;
             }
+
+
+            img:not(.active) {
+                top: 0;
+                left: -100%;
+            }
+
         }
 
         .slider-dots {
@@ -144,7 +160,7 @@
             right: 150px;
             bottom: 90px;
 
-            i {
+            .dots {
                 color: rgb(175, 175, 175);
                 font-size: 9px;
                 width: 15px;
@@ -156,95 +172,103 @@
                     font-size: 12px;
                 }
             }
-        }
-    }
 
-    .header-right-top {
-        position: absolute;
-        top: 30px;
-        left: 250px;
-        z-index: 11;
-
-        h2 {
-
-            color: white;
-            font-weight: 300;
-            font-size: 30px;
-            letter-spacing: 2px;
-        }
-
-        p {
-            color: white;
-            font-weight: 300;
-            margin-left: 100px;
-            margin-top: 8px;
-            font-size: 18px;
-            letter-spacing: 6px;
-        }
-
-        nav {
-            position: relative;
-
-            .line-1 {
-                position: absolute;
-                top: -12px;
-                left: -150px;
-                color: white;
-                width: 230px;
-                height: 2px;
-                background-color: white;
-            }
-
-            .line-2 {
-                position: absolute;
-                top: -12px;
-                left: 225px;
-                color: white;
-                width: 1427px;
-                height: 2px;
-                background-color: white;
-            }
-
-        }
-    }
-
-    .header-right-main {
-        position: absolute;
-        top: 330px;
-        left: 250px;
-        color: white;
-        z-index: 5;
-
-        h1 {
-            font-size: 100px;
-            font-weight: 400;
-            line-height: 90px;
-        }
-
-        button {
-            padding: 17px;
-            color: black;
-            background-color: white;
-            width: 200px;
-            border: none;
-            outline: none;
-            margin-top: 60px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: uppercase;
-            transition: 0.3s;
-            border-radius: 30px;
-
-            &:hover {
-                border: 1px solid white;
-                color: white;
-                background: transparent;
+            .active {
+                font-size: 12px;
             }
         }
+
+
     }
 
 }
+
+.header-right-top {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    z-index: 11;
+
+    h2 {
+
+        color: white;
+        font-weight: 300;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+        margin-left: 100px;
+        margin-top: 8px;
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+
+    nav {
+        position: relative;
+
+        .line-1 {
+            position: absolute;
+            top: -12px;
+            left: -150px;
+            color: white;
+            width: 230px;
+            height: 2px;
+            background-color: white;
+        }
+
+        .line-2 {
+            position: absolute;
+            top: -12px;
+            left: 225px;
+            color: white;
+            width: 1427px;
+            height: 2px;
+            background-color: white;
+        }
+
+    }
+}
+
+.header-right-main {
+    position: absolute;
+    top: 330px;
+    left: 250px;
+    color: white;
+    z-index: 5;
+
+    h1 {
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 90px;
+    }
+
+    button {
+        padding: 17px;
+        color: black;
+        background-color: white;
+        width: 200px;
+        border: none;
+        outline: none;
+        margin-top: 60px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border-radius: 30px;
+
+        &:hover {
+            border: 1px solid white;
+            color: white;
+            background: transparent;
+        }
+    }
+}
+
+
 
 // header end
 
@@ -484,28 +508,50 @@
         .right-testamonials {
             width: 50%;
             padding-right: 100px;
+            margin-top: 250px;
 
-            .testamonial-1 {
-                p {
-                    font-size: 30px;
-                    font-weight: 300;
-                }
+            .testamonial-section {
+                width: 600px;
+                // position: relative;
 
-                .profile {
-                    display: flex;
-                    margin-top: 50px;
 
-                    .info {
-                        margin-top: 10px;
-                        margin-left: 10px;
+                .testamonial-section-child {
+                    width: 100%;
 
-                        h2 {
-                            font-size: 16px;
-                            font-weight: 700;
-                        }
+                    position: relative;
+
+                    .testamonial-info:not(.active) {
+                        left: -100%;
+                    }
+
+                    .testamonial-info {
+                        position: absolute;
+                        background-color: palevioletred;
+                        bottom: 0;
+                        width: 100%;
 
                         p {
-                            font-size: 16px;
+                            font-size: 30px;
+                            font-weight: 300;
+                        }
+
+                        .profile {
+                            display: flex;
+                            margin-top: 50px;
+
+                            .info {
+                                margin-top: 10px;
+                                margin-left: 10px;
+
+                                h2 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
                         }
                     }
                 }
@@ -905,15 +951,19 @@
             .contact-number {
                 p {
                     font-size: 30px;
+                    cursor: pointer;
                 }
             }
 
             .social-logo {
+
+
                 img {
-                    width: 50px;
+                    width: 40px;
                     background-color: white;
                     border-radius: 50%;
-
+                    margin-left: 20px;
+                    cursor: pointer;
                 }
             }
 
@@ -930,4 +980,49 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+
+
+// keyframs
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
 }

@@ -33,49 +33,136 @@ function searchBoxFunction() {
     }
 }
 
+
 // slide functions
-var slideIdx = 1;
-showSlides(slideIdx);
 
-function currentSlide(n) {
-    showSlides(slideIdx = n);
+let sliderImages = document.querySelectorAll("img")
+let dots = document.querySelectorAll(".dots")
+
+var counter = 0;
+
+// slide next
+function slideNext() {
+    sliderImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+    if (counter >= sliderImages.length - 1) {
+        counter = 0
+    } else {
+        counter++;
+    }
+    if (counter === 3) {
+        counter = 0;
+    }
+    sliderImages[counter].style.animation = 'next2 0.5s ease-in forwards';
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slide-area")
-    var dots = document.getElementsByClassName("fa-circle")
-    if (n > slides.length) {
-        slideIdx = 1
+// slide back
+function slidePrev() {
+    sliderImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+    if (counter == 0) {
+        counter = sliderImages.length - 1;
+    } else {
+        counter--;
     }
-    if (n < 1) {
-        slideIdx = slides.length
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"
-    }
-    for (let i = 0; i < slides.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "")
-    }
-    slides[slideIdx - 1].style.display = "block"
-    dots[slideIdx - 1].className += " active";
+    sliderImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
 }
 
-// auto slides
-
-var slideIdx = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slide-area")
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"
+// auto slide
+function autoSlide() {
+    deletInterval = setInterval(timer, 4000)
+    function timer() {
+        slideNext()
+        indicators();
     }
-    slideIdx++;
-    if (slideIdx > slides.length) {
-        slideIdx = 1
-    }
-    slides[slideIdx - 1].style.display = "block";
-    setTimeout(showSlides, 2000)
 }
+autoSlide();
+
+// stop + resume auto scroll
+const slideContainer = document.querySelector(".header-right")
+slideContainer.addEventListener("mouseover", () => {
+    clearInterval(deletInterval);
+});
+slideContainer.addEventListener("mouseout", autoSlide);
+
+// indeicators dots logic
+function indicators() {
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "")
+    }
+    dots[counter].className += "active";
+}
+
+// indicators click event
+function switchImage(currentImage) {
+    currentImage.classList.add("active");
+    var imageId = currentImage.getAttribute('attr');
+    if (imageId > counter) {
+        sliderImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+        counter = imageId;
+        sliderImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+    } else if (imageId == counter) {
+        return;
+    } else {
+        sliderImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+        counter = imageId;
+        sliderImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+    }
+}
+indicators();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var slideIdx = 1;
+// showSlides(slideIdx);
+
+// function currentSlide(n) {
+//     showSlides(slideIdx = n);
+// }
+
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("slide-area")
+//     var dots = document.getElementsByClassName("fa-circle")
+//     if (n > slides.length) {
+//         slideIdx = 1
+//     }
+//     if (n < 1) {
+//         slideIdx = slides.length
+//     }
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none"
+//     }
+//     for (let i = 0; i < slides.length; i++) {
+//         dots[i].className = dots[i].className.replace("active", "")
+//     }
+//     slides[slideIdx - 1].style.display = "block"
+//     dots[slideIdx - 1].className += " active";
+// }
+
+// // auto slides
+
+// var slideIdx = 0;
+// showSlides();
+
+// function showSlides() {
+//     var i;
+//     var slides = document.getElementsByClassName("slide-area")
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none"
+//     }
+//     slideIdx++;
+//     if (slideIdx > slides.length) {
+//         slideIdx = 1
+//     }
+//     slides[slideIdx - 1].style.display = "block";
+//     setTimeout(showSlides, 2000)
+// }
