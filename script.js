@@ -90,7 +90,7 @@ function searchBoxFunction() {
         for (let i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "")
         }
-        dots[counter].className += "active";
+        dots[counter].className += " active";
     }
 
     // indicators click event
@@ -121,16 +121,19 @@ function searchBoxFunction() {
 
     var counter = 0;
 
-    function slidesNext() {
+    function slideNext() {
         testamonialSlides[counter].style.animation = 'next1 0.5s ease-in forwards';
         if (counter >= testamonialSlides.length - 1) {
             counter = 0;
         } else {
             counter++;
         }
+        if (counter === 5) {
+            counter = 0;
+        }
         testamonialSlides[counter].style.animation = 'next2 0.5s ease-in forwards';
     }
-    function slidesPrev() {
+    function slidePrev() {
         testamonialSlides[counter].style.animation = 'prev1 0.5s ease-in forwards';
         if (counter == 0) {
             counter = testamonialSlides.length - 1;
@@ -139,13 +142,44 @@ function searchBoxFunction() {
         }
         testamonialSlides[counter].style.animation = 'prev2 0.5s ease-in forwards';
     }
-    function autoSlide() {
-        deletInterval = setInterval(timer, 1000)
-        function timer() {
-            slideNext();
+
+    // indicators logic
+    function indeicators() {
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "")
+        }
+        dots[counter].className += " active"
+    }
+
+    // indicators click event
+    function switchImage(currentImage) {
+        currentImage.classList.add("active");
+        var imageId = currentImage.getAttribute("attr");
+        if (imageId > counter) {
+            testamonialSlides[counter].style.animation = 'next1 0.5s ease-in forwards';
+            counter = imageId;
+            testamonialSlides[counter].style.animation = 'next2 0.5s ease-in forwards';
+        } else if (imageId == counter) {
+            return;
+        } else {
+            testamonialSlides[counter].style.animation = 'prev1 0.5s ease-in forwards';
+            counter = imageId;
+            testamonialSlides[counter].style.animation = 'prev2 0.5s ease-in forwards';
         }
     }
+    indeicators();
+
+
+    function autoSlide() {
+        let deletInterval = setInterval(timer, 2000);
+        function timer() {
+            slideNext();
+            indeicators();
+        };
+    }
     autoSlide();
+
+
 }
 // testamonial slide function end
 
