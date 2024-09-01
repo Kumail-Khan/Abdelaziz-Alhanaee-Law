@@ -507,18 +507,21 @@ body {
 
         .right-testamonials {
             width: 50%;
-            padding-right: 100px;
-            margin-top: 250px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
 
             .testamonial-section {
                 width: 600px;
-                // position: relative;
-
+                position: relative;
+                margin-top: 250px;
 
                 .testamonial-section-child {
                     width: 100%;
 
-                    position: relative;
+                    // position: relative;
 
                     .testamonial-info:not(.active) {
                         left: -100%;

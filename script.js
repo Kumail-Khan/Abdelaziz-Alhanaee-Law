@@ -34,82 +34,152 @@ function searchBoxFunction() {
 }
 
 
-// slide functions
 
-let sliderImages = document.querySelectorAll("img")
-let dots = document.querySelectorAll(".dots")
+// footer slide functions
+{
 
-var counter = 0;
+    let sliderImages = document.querySelectorAll("img")
+    let dots = document.querySelectorAll(".dots")
 
-// slide next
-function slideNext() {
-    sliderImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-    if (counter >= sliderImages.length - 1) {
-        counter = 0
-    } else {
-        counter++;
-    }
-    if (counter === 3) {
-        counter = 0;
-    }
-    sliderImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-}
+    var counter = 0;
 
-// slide back
-function slidePrev() {
-    sliderImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-    if (counter == 0) {
-        counter = sliderImages.length - 1;
-    } else {
-        counter--;
-    }
-    sliderImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-}
-
-// auto slide
-function autoSlide() {
-    deletInterval = setInterval(timer, 4000)
-    function timer() {
-        slideNext()
-        indicators();
-    }
-}
-autoSlide();
-
-// stop + resume auto scroll
-const slideContainer = document.querySelector(".header-right")
-slideContainer.addEventListener("mouseover", () => {
-    clearInterval(deletInterval);
-});
-slideContainer.addEventListener("mouseout", autoSlide);
-
-// indeicators dots logic
-function indicators() {
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "")
-    }
-    dots[counter].className += "active";
-}
-
-// indicators click event
-function switchImage(currentImage) {
-    currentImage.classList.add("active");
-    var imageId = currentImage.getAttribute('attr');
-    if (imageId > counter) {
+    // slide next
+    function slideNext() {
         sliderImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-        counter = imageId;
+        if (counter >= sliderImages.length - 1) {
+            counter = 0
+        } else {
+            counter++;
+        }
+        if (counter === 3) {
+            counter = 0;
+        }
         sliderImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-    } else if (imageId == counter) {
-        return;
-    } else {
+    }
+
+    // slide back
+    function slidePrev() {
         sliderImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-        counter = imageId;
+        if (counter == 0) {
+            counter = sliderImages.length - 1;
+        } else {
+            counter--;
+        }
         sliderImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
     }
+
+    // auto slide
+    function autoSlide() {
+        deletInterval = setInterval(timer, 4000)
+        function timer() {
+            slideNext()
+            indicators();
+        }
+    }
+    autoSlide();
+
+    // stop + resume auto scroll
+    const slideContainer = document.querySelector(".header-right")
+    slideContainer.addEventListener("mouseover", () => {
+        clearInterval(deletInterval);
+    });
+    slideContainer.addEventListener("mouseout", autoSlide);
+
+    // indeicators dots logic
+    function indicators() {
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "")
+        }
+        dots[counter].className += "active";
+    }
+
+    // indicators click event
+    function switchImage(currentImage) {
+        currentImage.classList.add("active");
+        var imageId = currentImage.getAttribute('attr');
+        if (imageId > counter) {
+            sliderImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+            counter = imageId;
+            sliderImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+        } else if (imageId == counter) {
+            return;
+        } else {
+            sliderImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+            counter = imageId;
+            sliderImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+        }
+    }
+    indicators();
 }
-indicators();
+// footer slide functions end
 
 
+// testamonial slide function
+{
+    let testamonialSlides = document.querySelectorAll(".testamonial-info")
+    let dots = document.querySelector(".indicator")
+
+    var counter = 0;
+
+    function slidesNext() {
+        testamonialSlides[counter].style.animation = 'next1 0.5s ease-in forwards';
+        if (counter >= testamonialSlides.length - 1) {
+            counter = 0;
+        } else {
+            counter++;
+        }
+        testamonialSlides[counter].style.animation = 'next2 0.5s ease-in forwards';
+    }
+    function slidesPrev() {
+        testamonialSlides[counter].style.animation = 'prev1 0.5s ease-in forwards';
+        if (counter == 0) {
+            counter = testamonialSlides.length - 1;
+        } else {
+            counter--;
+        }
+        testamonialSlides[counter].style.animation = 'prev2 0.5s ease-in forwards';
+    }
+    function autoSlide() {
+        deletInterval = setInterval(timer, 1000)
+        function timer() {
+            slideNext();
+        }
+    }
+    autoSlide();
+}
+// testamonial slide function end
+
+
+
+// numbers of clients 
+{
+    let client = document.getElementById("client");
+    let counter = 0;
+
+    setInterval(() => {
+        if (counter === 500) {
+            clearInterval();
+        } else {
+            counter += 10;
+            client.innerHTML = counter;
+        }
+    }, 20)
+    {
+        let experience = document.getElementById("experience");
+        let counter = 0;
+
+        setInterval(() => {
+            if (counter === 15) {
+                clearInterval();
+            } else {
+                counter += 1;
+                experience.innerHTML = counter;
+            }
+        }, 75)
+    }
+
+}
+// numbers of clients end
 
 
 
