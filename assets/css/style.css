@@ -368,7 +368,7 @@ body {
       justify-content: center;
       overflow: hidden; }
       .testamonials .testamonial-parent .right-testamonials .testamonial-section {
-        width: 600px;
+        width: 100%;
         position: relative;
         margin-top: 250px; }
         .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child {
@@ -377,12 +377,12 @@ body {
             left: -100%; }
           .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info {
             position: absolute;
-            background-color: palevioletred;
             bottom: 0;
             width: 100%; }
             .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info p {
               font-size: 30px;
-              font-weight: 300; }
+              font-weight: 300;
+              margin-right: 80px; }
             .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info .profile {
               display: flex;
               margin-top: 50px; }

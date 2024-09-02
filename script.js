@@ -117,7 +117,7 @@ function searchBoxFunction() {
 // testamonial slide function
 {
     let testamonialSlides = document.querySelectorAll(".testamonial-info")
-    let dots = document.querySelector(".indicator")
+    let dots = document.querySelectorAll(".indicator")
 
     var counter = 0;
 
@@ -197,7 +197,7 @@ function searchBoxFunction() {
             counter += 10;
             client.innerHTML = counter;
         }
-    }, 20)
+    }, 15)
     {
         let experience = document.getElementById("experience");
         let counter = 0;
@@ -209,7 +209,7 @@ function searchBoxFunction() {
                 counter += 1;
                 experience.innerHTML = counter;
             }
-        }, 75)
+        }, 65)
     }
 
 }

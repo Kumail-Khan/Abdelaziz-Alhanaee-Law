@@ -514,7 +514,7 @@ body {
             overflow: hidden;
 
             .testamonial-section {
-                width: 600px;
+                width: 100%;
                 position: relative;
                 margin-top: 250px;
 
@@ -529,13 +529,13 @@ body {
 
                     .testamonial-info {
                         position: absolute;
-                        background-color: palevioletred;
                         bottom: 0;
                         width: 100%;
 
                         p {
                             font-size: 30px;
                             font-weight: 300;
+                            margin-right: 80px;
                         }
 
                         .profile {
