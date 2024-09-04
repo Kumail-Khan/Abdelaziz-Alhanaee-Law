@@ -1,541 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdelaziz Alhanaee Law</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/basic.css" />
-    <script
-      src="https://kit.fontawesome.com/9fa5e4001d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <script src="https://kit.fontawesome.com/9fa5e4001d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
-      .main-slider-area {
-        height: 100vh;
-      }
-      .main-slider-area img {
-        width: 100%;
-        object-fit: cover;
-      }
+        .main-slider-area img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <div class="header">
-        <div class="header-left">
-          <div class="menu">
-            <i class="fa-solid fa-bars" onclick="sidebarMenu()"></i>
-          </div>
-          <div class="cancel">
-            <i class="fa-solid fa-xmark" onclick="sidebarMenu()"></i>
-          </div>
-          <div class="search">
-            <i
-              class="fa-solid fa-magnifying-glass"
-              onclick="searchBoxFunction()"
-            ></i>
-          </div>
-          <div class="cancel-2">
-            <i class="fa-solid fa-xmark" onclick="searchBoxFunction()"></i>
-          </div>
-        </div>
-        <div class="search-box">
-          <input type="search" placeholder="Search" />
-        </div>
-        <div class="sidebar-menu">
-          <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>practices</li>
-            <li>our teams</li>
-            <li>awards</li>
-            <li>news and articles</li>
-            <li>careers</li>
-            <li>faq</li>
-            <li>contact us</li>
-          </ul>
-        </div>
-        <!-- header-left end -->
-        <div class="header-right">
-          <div class="header-right-top">
-            <h2>Abdelaziz Alhanaee</h2>
-            <p>Law Firm</p>
-            <nav>
-              <hr class="line-1" />
-              <hr class="line-2" />
-            </nav>
-          </div>
-          <div style="background-color: red" class="main-slider-area">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/header-main-image.jpg" />
+        <div class="header">
+            <div class="header-left">
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="sidebarMenu()"></i>
                 </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <!-- <img src="images/header-main-image.jpg" class="active">
-                    <img src="images/header-main-image.jpg">
-                    <img src="images/header-main-image.jpg"> -->
-          </div>
-          <!-- slide-area end -->
-
-          <div class="header-right-main">
-            <h1>
-              Culturally <br />
-              Empowered
-            </h1>
-            <button>Our Practices</button>
-          </div>
-          <!-- header-right-main end -->
-
-          <div class="slider-dots">
-            <i
-              class="fa-solid fa-circle dots active"
-              attr="0"
-              onclick="switchImage(this)"
-            ></i>
-            <i
-              class="fa-solid fa-circle dots"
-              attr="1"
-              onclick="switchImage(this)"
-            ></i>
-            <i
-              class="fa-solid fa-circle dots"
-              attr="2"
-              onclick="switchImage(this)"
-            ></i>
-          </div>
-        </div>
-        <!-- header-right end -->
-      </div>
-      <!-- header end -->
-      <div class="about-us">
-        <div class="about-title">
-          <h1>About Us</h1>
-        </div>
-        <div class="about-top" data-aos="fade-up">
-          <div>
-            <h1 id="client">500</h1>
-            <p>Clients</p>
-          </div>
-          <div>
-            <h1 id="experience">15</h1>
-            <p>Years of Experience</p>
-          </div>
-        </div>
-        <!-- about-tope end -->
-        <div class="about-bottom">
-          <div class="bottom-image">
-            <div class="img-style"></div>
-            <img src="images/homepage-abouus-image.jpg" />
-          </div>
-          <div class="bottom-info">
-            <p>
-              Abdelaziz Alhanaee Advocates & Legal Consultancy advises its
-              clients in a wide variety of sectors, including setting up
-              businesses around the UAE and drafting all necessary documents.
-            </p>
-            <div class="info-button">
-              <button>More About Us</button>
-              <p> LEGAL OBLIGATION FOR YOUR COMPANY</p>
-            </div>
-          </div>
-        </div>
-        <!-- about-bottome end -->
-      </div>
-      <!-- about-us end -->
-      <div class="faqs">
-        <div class="faqs-parent">
-          <div class="faqs-section">
-            <h1>Our Practice Areas</h1>
-            <div class="faq">
-              <div class="question">
-                <h2>Real Estate</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-1 end -->
-            <div class="faq">
-              <div class="question">
-                <h2>Criminal</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-2 end -->
-            <div class="faq">
-              <div class="question">
-                <h2>Intellectual Property</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-3 end -->
-            <div class="faq">
-              <div class="question">
-                <h2>Civil and Comercial</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-4 end -->
-            <div class="faq">
-              <div class="question">
-                <h2>Construction</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-5 end -->
-            <div class="faq">
-              <div class="question">
-                <h2>labour</h2>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <!-- question end -->
-              <div class="answer">
-                <p>
-                  Ashely look at me! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Consequatur asperiores exercitationem harum
-                  dolores deleniti nobis maiores iste nulla quasi
-                </p>
-              </div>
-              <!-- answer end -->
-            </div>
-            <!-- faq-6 end -->
-          </div>
-          <img src="images/main-actor.png" alt="" />
-        </div>
-      </div>
-      <!-- faqs end -->
-
-      <div class="testamonials">
-        <div class="testamonial-parent">
-          <div class="left-testamonials">
-            <h1>Testimonials</h1>
-          </div>
-          <!-- left-testamonials end -->
-          <div class="right-testamonials">
-            <div class="testamonial-section">
-              <div class="testamonial-section-child">
-                <div class="testamonial-info active">
-                  <p>
-                    The best Lawyers and Legal Consultants. Law Firm has a team
-                    who is dedicated and eager to perform. We recommend them as
-                    one of the best Emirati Law Firms in Dubai.
-                  </p>
-                  <div class="profile">
-                    <img src="images/profile-pic.png" />
-                    <div class="info">
-                      <h2>Michael Merla</h2>
-                      <p>Design Director</p>
-                    </div>
-                  </div>
+                <div class="cancel">
+                    <i class="fa-solid fa-xmark" onclick="sidebarMenu()"></i>
                 </div>
-                <!-- testamonial-info end -->
-                <div class="testamonial-info">
-                  <p>
-                    The best Lawyers and Legal Consultants. Law Firm has a team
-                    who is dedicated and eager to perform. We recommend them as
-                    one of the best Emirati Law Firms in Dubai.
-                  </p>
-                  <div class="profile">
-                    <img src="images/profile-pic.png" />
-                    <div class="info">
-                      <h2>Michael Merla</h2>
-                      <p>Design Director</p>
-                    </div>
-                  </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" onclick="searchBoxFunction()"></i>
                 </div>
-                <!-- testamonial-info end -->
-                <div class="testamonial-info">
-                  <p>
-                    The best Lawyers and Legal Consultants. Law Firm has a team
-                    who is dedicated and eager to perform. We recommend them as
-                    one of the best Emirati Law Firms in Dubai.
-                  </p>
-                  <div class="profile">
-                    <img src="images/profile-pic.png" />
-                    <div class="info">
-                      <h2>Michael Merla</h2>
-                      <p>Design Director</p>
-                    </div>
-                  </div>
+                <div class="cancel-2">
+                    <i class="fa-solid fa-xmark" onclick="searchBoxFunction()"></i>
                 </div>
-                <!-- testamonial-info end -->
-                <div class="testamonial-info">
-                  <p>
-                    The best Lawyers and Legal Consultants. Law Firm has a team
-                    who is dedicated and eager to perform. We recommend them as
-                    one of the best Emirati Law Firms in Dubai.
-                  </p>
-                  <div class="profile">
-                    <img src="images/profile-pic.png" />
-                    <div class="info">
-                      <h2>Michael Merla</h2>
-                      <p>Design Director</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- testamonial-info end -->
-                <div class="testamonial-info">
-                  <p>
-                    The best Lawyers and Legal Consultants. Law Firm has a team
-                    who is dedicated and eager to perform. We recommend them as
-                    one of the best Emirati Law Firms in Dubai.
-                  </p>
-                  <div class="profile">
-                    <img src="images/profile-pic.png" />
-                    <div class="info">
-                      <h2>Michael Merla</h2>
-                      <p>Design Director</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- testamonial-info end -->
-              </div>
             </div>
-            <!-- testamonial-section end -->
-            <div class="next-buttons">
-              <p class="indicator active" attr="0">01</p>
-              <p class="indicator" attr="1">02</p>
-              <p class="indicator" attr="2">03</p>
-              <p class="indicator" attr="3">04</p>
-              <p class="indicator" attr="4">05</p>
+            <div class="search-box">
+                <input type="search" placeholder="Search" />
             </div>
-          </div>
-          <!-- right-testamonials end -->
-        </div>
-      </div>
-      <!-- testamonials end -->
-      <div class="articles">
-        <div class="articles-section">
-          <div class="article-header">
-            <h1>News & Articles</h1>
-            <button>READ ALL NEWS AND ARTICLES</button>
-          </div>
-          <!-- article-header end -->
-          <div class="article-main">
-            <div class="arcticle">
-              <img src="images/article-1.jpg" />
-              <h3>Press Release</h3>
-              <p>
-                Surprise GOP campaign finance law proposal prompts walkout by
-                Democratic senators • NC Newsline
-              </p>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>practices</li>
+                    <li>our teams</li>
+                    <li>awards</li>
+                    <li>news and articles</li>
+                    <li>careers</li>
+                    <li>faq</li>
+                    <li>contact us</li>
+                </ul>
             </div>
-            <div class="arcticle">
-              <img src="images/article-2.jpg" />
-              <h3>Article</h3>
-              <p>Navigating the UAE's updated pension regulations</p>
-            </div>
-          </div>
-          <!-- article-main end -->
-          <div class="next-buttons">
-            <p>01</p>
-            <p>02</p>
-            <p>03</p>
-            <p>04</p>
-            <p>05</p>
-          </div>
-        </div>
-      </div>
-      <!-- articles end -->
-
-      <div class="teams">
-        <div class="teams-section">
-          <div class="left-teams">
-            <div class="left-team-parent">
-              <h1>Our Teams</h1>
-              <p class="parah">
-                Abdelaziz Alhanaee is the founder and Chairman of Abdelaziz
-                Alhanaee Advocates and Legal Consultancy which was established
-                in Dubai at the end of 2012.
-              </p>
-
-              <div class="teams-faqs">
-                <div class="faq">
-                  <div class="left">
+            <!-- header-left end -->
+            <div class="header-right">
+                <div class="header-right-top">
                     <h2>Abdelaziz Alhanaee</h2>
-                    <p>FOUNDER AND MANAGING PARTNER</p>
-                  </div>
-                  <div class="right">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
+                    <p>Law Firm</p>
+                    <nav>
+                        <hr class="line-1" />
+                        <hr class="line-2" />
+                    </nav>
                 </div>
-                <div class="faq">
-                  <div class="left">
-                    <h2>Mahmoud AbdelRahman</h2>
-                    <p>LEGAL RESEARCHER</p>
-                  </div>
-                  <div class="right">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
+                <div class="main-slider-area">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/header-main-image.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/header-main-image.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/header-main-image.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <!-- faq-1 end -->
-                <div class="faq">
-                  <div class="left">
-                    <h2>Harith Al- kutubi</h2>
-                    <p>ARBUTRATION EXPERT “ CONSTRUCTION DISPUTES”</p>
-                  </div>
-                  <div class="right">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
-                </div>
-                <!-- faq-2 end -->
-                <div class="faq">
-                  <div class="left">
-                    <h2>Hussein Shabana</h2>
-                    <p>SENIOR PARTNER</p>
-                  </div>
-                  <div class="right">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
-                </div>
-                <!-- faq-3 end -->
-                <div class="faq">
-                  <div class="left">
-                    <h2>Safwan Mohamed</h2>
-                    <p>LEGAL RESEARCHERR</p>
-                  </div>
-                  <div class="right">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
-                </div>
-                <!-- faq-4 end -->
-              </div>
-              <!-- teams-faqs end -->
-            </div>
-          </div>
-          <!-- left-teams end -->
-          <div class="right-teams">
-            <img src="images/main-actor-2.png" />
-          </div>
-          <!-- right-team end -->
-        </div>
-      </div>
-      <!-- teams end -->
+                <!-- slide-area end -->
 
-      <div class="uptodate">
-        <div class="uptodate-section">
-          <div class="style"></div>
-          <div class="child">
-            <h1>Stay up to Date</h1>
-            <div class="email-section">
-              <input type="email" placeholder="Enter your email address" />
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- uptodate end -->
+                <div class="header-right-main">
+                    <h1>
+                        Culturally <br />
+                        Empowered
+                    </h1>
+                    <button>Our Practices</button>
+                </div>
+                <!-- header-right-main end -->
 
-      <div class="footer">
-        <div class="footer-top">
-          <h2>Abdelaziz Alhanaee</h2>
-          <p>Law Firm</p>
-          <nav>
-            <hr class="line-1" />
-            <hr class="line-2" />
-          </nav>
+                <div class="slider-dots">
+                    <i class="fa-solid fa-circle dots active" attr="0" onclick="switchImage(this)"></i>
+                    <i class="fa-solid fa-circle dots" attr="1" onclick="switchImage(this)"></i>
+                    <i class="fa-solid fa-circle dots" attr="2" onclick="switchImage(this)"></i>
+                </div>
+            </div>
+            <!-- header-right end -->
         </div>
-        <div class="footer-section">
-          <div class="links">
-            <div class="quick-links">
-              <h1>Quick Links</h1>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Teams</a></li>
-                <li><a href="#">Awards</a></li>
-                <li><a href="#">News and Articles</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
+        <!-- header end -->
+        <div class="about-us">
+            <div class="about-title">
+                <h1>About Us</h1>
             </div>
-            <!-- quick-links end -->
-            <div class="experties-links">
-              <h1>Our Experties</h1>
-              <ul>
-                <li><a href="#">Real Estate</a></li>
-                <li><a href="#">Civil and Constrution</a></li>
-                <li><a href="#">Labour</a></li>
-                <li><a href="#">Criminal</a></li>
-                <li><a href="#">Intellectual Property</a></li>
-              </ul>
+            <div class="about-top" data-aos="fade-up">
+                <div>
+                    <h1 id="client">500</h1>
+                    <p>Clients</p>
+                </div>
+                <div>
+                    <h1 id="experience">15</h1>
+                    <p>Years of Experience</p>
+                </div>
             </div>
-            <!-- experties-links end -->
-          </div>
-
-          <div class="social-media">
-            <div class="contact-number">
-              <p> info@alhanaee.com   971 4 380 8 884</p>
+            <!-- about-tope end -->
+            <div class="about-bottom">
+                <div class="bottom-image">
+                    <div class="img-style"></div>
+                    <img src="images/homepage-abouus-image.jpg" />
+                </div>
+                <div class="bottom-info">
+                    <p>
+                        Abdelaziz Alhanaee Advocates & Legal Consultancy advises its
+                        clients in a wide variety of sectors, including setting up
+                        businesses around the UAE and drafting all necessary documents.
+                    </p>
+                    <div class="info-button">
+                        <button>More About Us</button>
+                        <p> LEGAL OBLIGATION FOR YOUR COMPANY</p>
+                    </div>
+                </div>
             </div>
-            <div class="social-logo">
-              <img src="images/twitter.png" />
-              <img src="images/linkedin.png" />
-            </div>
-          </div>
+            <!-- about-bottome end -->
         </div>
-      </div>
-      <!-- footer end -->
+        <!-- about-us end -->
+        <div class="faqs">
+            <div class="faqs-parent">
+                <div class="faqs-section">
+                    <h1>Our Practice Areas</h1>
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Real Estate</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-1 end -->
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Criminal</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-2 end -->
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Intellectual Property</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-3 end -->
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Civil and Comercial</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-4 end -->
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Construction</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-5 end -->
+                    <div class="faq">
+                        <div class="question">
+                            <h2>labour</h2>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <!-- question end -->
+                        <div class="answer">
+                            <p>
+                                Ashely look at me! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Consequatur asperiores exercitationem harum
+                                dolores deleniti nobis maiores iste nulla quasi
+                            </p>
+                        </div>
+                        <!-- answer end -->
+                    </div>
+                    <!-- faq-6 end -->
+                </div>
+                <img src="images/main-actor.png" alt="" />
+            </div>
+        </div>
+        <!-- faqs end -->
 
-      <div class="copyright-section">
-        <p>
-          © 2024 Abdelaziz Alhanaee Advocates & Legal Consultancy. All Rights
-          Reserved.
-        </p>
-        <p>Design and Developed by ICON Advertising</p>
-      </div>
+        <div class="testamonials">
+            <div class="testamonial-parent">
+                <div class="left-testamonials">
+                    <h1>Testimonials</h1>
+                </div>
+                <!-- left-testamonials end -->
+                <div class="right-testamonials">
+                    <div class="testamonial-section">
+                        <div class="testamonial-section-child">
+                            <div class="testamonial-info active">
+                                <p>
+                                    The best Lawyers and Legal Consultants. Law Firm has a team
+                                    who is dedicated and eager to perform. We recommend them as
+                                    one of the best Emirati Law Firms in Dubai.
+                                </p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png" />
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p>Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>
+                                    The best Lawyers and Legal Consultants. Law Firm has a team
+                                    who is dedicated and eager to perform. We recommend them as
+                                    one of the best Emirati Law Firms in Dubai.
+                                </p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png" />
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p>Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>
+                                    The best Lawyers and Legal Consultants. Law Firm has a team
+                                    who is dedicated and eager to perform. We recommend them as
+                                    one of the best Emirati Law Firms in Dubai.
+                                </p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png" />
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p>Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>
+                                    The best Lawyers and Legal Consultants. Law Firm has a team
+                                    who is dedicated and eager to perform. We recommend them as
+                                    one of the best Emirati Law Firms in Dubai.
+                                </p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png" />
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p>Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                            <div class="testamonial-info">
+                                <p>
+                                    The best Lawyers and Legal Consultants. Law Firm has a team
+                                    who is dedicated and eager to perform. We recommend them as
+                                    one of the best Emirati Law Firms in Dubai.
+                                </p>
+                                <div class="profile">
+                                    <img src="images/profile-pic.png" />
+                                    <div class="info">
+                                        <h2>Michael Merla</h2>
+                                        <p>Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testamonial-info end -->
+                        </div>
+                    </div>
+                    <!-- testamonial-section end -->
+                    <div class="next-buttons">
+                        <p class="indicator active" attr="0">01</p>
+                        <p class="indicator" attr="1">02</p>
+                        <p class="indicator" attr="2">03</p>
+                        <p class="indicator" attr="3">04</p>
+                        <p class="indicator" attr="4">05</p>
+                    </div>
+                </div>
+                <!-- right-testamonials end -->
+            </div>
+        </div>
+        <!-- testamonials end -->
+        <div class="articles">
+            <div class="articles-section">
+                <div class="article-header">
+                    <h1>News & Articles</h1>
+                    <button>READ ALL NEWS AND ARTICLES</button>
+                </div>
+                <!-- article-header end -->
+                <div class="article-main">
+                    <div class="arcticle">
+                        <img src="images/article-1.jpg" />
+                        <h3>Press Release</h3>
+                        <p>
+                            Surprise GOP campaign finance law proposal prompts walkout by
+                            Democratic senators • NC Newsline
+                        </p>
+                    </div>
+                    <div class="arcticle">
+                        <img src="images/article-2.jpg" />
+                        <h3>Article</h3>
+                        <p>Navigating the UAE's updated pension regulations</p>
+                    </div>
+                </div>
+                <!-- article-main end -->
+                <div class="next-buttons">
+                    <p>01</p>
+                    <p>02</p>
+                    <p>03</p>
+                    <p>04</p>
+                    <p>05</p>
+                </div>
+            </div>
+        </div>
+        <!-- articles end -->
+
+        <div class="teams">
+            <div class="teams-section">
+                <div class="left-teams">
+                    <div class="left-team-parent">
+                        <h1>Our Teams</h1>
+                        <p class="parah">
+                            Abdelaziz Alhanaee is the founder and Chairman of Abdelaziz
+                            Alhanaee Advocates and Legal Consultancy which was established
+                            in Dubai at the end of 2012.
+                        </p>
+
+                        <div class="teams-faqs">
+                            <div class="faq">
+                                <div class="left">
+                                    <h2>Abdelaziz Alhanaee</h2>
+                                    <p>FOUNDER AND MANAGING PARTNER</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="left">
+                                    <h2>Mahmoud AbdelRahman</h2>
+                                    <p>LEGAL RESEARCHER</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <!-- faq-1 end -->
+                            <div class="faq">
+                                <div class="left">
+                                    <h2>Harith Al- kutubi</h2>
+                                    <p>ARBUTRATION EXPERT “ CONSTRUCTION DISPUTES”</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <!-- faq-2 end -->
+                            <div class="faq">
+                                <div class="left">
+                                    <h2>Hussein Shabana</h2>
+                                    <p>SENIOR PARTNER</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <!-- faq-3 end -->
+                            <div class="faq">
+                                <div class="left">
+                                    <h2>Safwan Mohamed</h2>
+                                    <p>LEGAL RESEARCHERR</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <!-- faq-4 end -->
+                        </div>
+                        <!-- teams-faqs end -->
+                    </div>
+                </div>
+                <!-- left-teams end -->
+                <div class="right-teams">
+                    <img src="images/main-actor-2.png" />
+                </div>
+                <!-- right-team end -->
+            </div>
+        </div>
+        <!-- teams end -->
+
+        <div class="uptodate">
+            <div class="uptodate-section">
+                <div class="style"></div>
+                <div class="child">
+                    <h1>Stay up to Date</h1>
+                    <div class="email-section">
+                        <input type="email" placeholder="Enter your email address" />
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- uptodate end -->
+
+        <div class="footer">
+            <div class="footer-top">
+                <h2>Abdelaziz Alhanaee</h2>
+                <p>Law Firm</p>
+                <nav>
+                    <hr class="line-1" />
+                    <hr class="line-2" />
+                </nav>
+            </div>
+            <div class="footer-section">
+                <div class="links">
+                    <div class="quick-links">
+                        <h1>Quick Links</h1>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Teams</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">News and Articles</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- quick-links end -->
+                    <div class="experties-links">
+                        <h1>Our Experties</h1>
+                        <ul>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">Civil and Constrution</a></li>
+                            <li><a href="#">Labour</a></li>
+                            <li><a href="#">Criminal</a></li>
+                            <li><a href="#">Intellectual Property</a></li>
+                        </ul>
+                    </div>
+                    <!-- experties-links end -->
+                </div>
+
+                <div class="social-media">
+                    <div class="contact-number">
+                        <p> info@alhanaee.com   971 4 380 8 884</p>
+                    </div>
+                    <div class="social-logo">
+                        <img src="images/twitter.png" />
+                        <img src="images/linkedin.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end -->
+
+        <div class="copyright-section">
+            <p>
+                © 2024 Abdelaziz Alhanaee Advocates & Legal Consultancy. All Rights
+                Reserved.
+            </p>
+            <p>Design and Developed by ICON Advertising</p>
+        </div>
     </div>
     <!-- container end -->
 
@@ -543,13 +524,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
 
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+
+            },
+        });
     </script>
-  </body>
+</body>
+
 </html>
