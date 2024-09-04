@@ -46,9 +46,18 @@
                     </nav>
                 </div>
                 <div class="slide-area">
-                    <img src="images/header-main-image.jpg" class="active">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/header-main-image.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- <img src="images/header-main-image.jpg" class="active">
                     <img src="images/header-main-image.jpg">
-                    <img src="images/header-main-image.jpg">
+                    <img src="images/header-main-image.jpg"> -->
                 </div>
                 <!-- slide-area end -->
 
@@ -481,6 +490,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
     </script>
 </body>
 
