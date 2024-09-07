@@ -101,33 +101,25 @@ body {
   .header .header-right {
     width: 100%;
     position: relative; }
-    .header .header-right .slide-area {
+    .header .header-right .headerSwiper .swiper-wrapper .swiper-slide img {
       width: 100%;
-      height: 100%;
-      overflow: hidden; }
-      .header .header-right .slide-area img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        position: absolute; }
-      .header .header-right .slide-area img:not(.active) {
-        top: 0;
-        left: -100%; }
-    .header .header-right .slider-dots {
-      position: absolute;
-      right: 150px;
-      bottom: 90px; }
-      .header .header-right .slider-dots .dots {
-        color: #afafaf;
-        font-size: 9px;
-        width: 15px;
-        height: 15px;
-        cursor: pointer;
-        transition: 0.2s; }
-        .header .header-right .slider-dots .dots:hover {
-          font-size: 12px; }
-      .header .header-right .slider-dots .active {
-        font-size: 12px; }
+      height: 100vh;
+      object-fit: cover; }
+    .header .header-right .headerSwiper .swiper-pagination {
+      display: flex;
+      justify-content: end;
+      padding: 0 150px 70px 0;
+      align-items: center; }
+    .header .header-right .headerSwiper .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      opacity: 0.9;
+      background-color: gray;
+      transition: 0.3s; }
+    .header .header-right .headerSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: lightgray;
+      width: 12px;
+      height: 12px; }
 
 .header-right-top {
   position: absolute;
@@ -379,43 +371,44 @@ body {
       flex-direction: column;
       justify-content: center;
       overflow: hidden; }
-      .testamonials .testamonial-parent .right-testamonials .testamonial-section {
+      .testamonials .testamonial-parent .right-testamonials .testamonialSwiper {
         width: 100%;
-        position: relative;
-        margin-top: 250px; }
-        .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child {
-          width: 100%; }
-          .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info:not(.active) {
-            left: -100%; }
-          .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info {
-            position: absolute;
-            bottom: 0;
-            width: 100%; }
-            .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info p {
-              font-size: 30px;
-              font-weight: 300;
-              margin-right: 80px; }
-            .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info .profile {
-              display: flex;
-              margin-top: 50px; }
-              .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info .profile .info {
-                margin-top: 10px;
-                margin-left: 10px; }
-                .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info .profile .info h2 {
-                  font-size: 16px;
-                  font-weight: 700; }
-                .testamonials .testamonial-parent .right-testamonials .testamonial-section .testamonial-section-child .testamonial-info .profile .info p {
-                  font-size: 16px; }
-      .testamonials .testamonial-parent .right-testamonials .next-buttons {
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+        position: relative; }
+        .testamonials .testamonial-parent .right-testamonials .testamonialSwiper .swiper-wrapper .swiper-slide p {
+          font-size: 30px;
+          font-weight: 300;
+          margin-right: 80px; }
+        .testamonials .testamonial-parent .right-testamonials .testamonialSwiper .swiper-wrapper .swiper-slide .profile {
+          display: flex;
+          margin-top: 50px; }
+          .testamonials .testamonial-parent .right-testamonials .testamonialSwiper .swiper-wrapper .swiper-slide .profile .info {
+            margin-top: 10px;
+            margin-left: 10px; }
+            .testamonials .testamonial-parent .right-testamonials .testamonialSwiper .swiper-wrapper .swiper-slide .profile .info h2 {
+              font-size: 16px;
+              font-weight: 700; }
+            .testamonials .testamonial-parent .right-testamonials .testamonialSwiper .swiper-wrapper .swiper-slide .profile .info p {
+              font-size: 16px; }
+      .testamonials .testamonial-parent .right-testamonials .swiper-pagination {
         display: flex;
-        margin-top: 40px;
-        gap: 10px; }
-        .testamonials .testamonial-parent .right-testamonials .next-buttons p {
-          font-size: 16px;
-          cursor: pointer;
-          color: #a1a1a1; }
-          .testamonials .testamonial-parent .right-testamonials .next-buttons p:hover {
-            color: #7d7d7d; }
+        justify-content: end;
+        position: absolute;
+        bottom: 10px;
+        left: -600px; }
+      .testamonials .testamonial-parent .right-testamonials .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        opacity: 0.9;
+        background-color: white;
+        color: darkgray;
+        transition: 0.3s;
+        font-weight: 600; }
+        .testamonials .testamonial-parent .right-testamonials .swiper-pagination-bullet:hover {
+          color: #666666; }
+      .testamonials .testamonial-parent .right-testamonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        color: #292929; }
 
 .articles {
   width: 100%;
@@ -453,23 +446,23 @@ body {
         .articles .articles-section .article-header button:hover {
           background-color: black;
           color: white; }
-    .articles .articles-section .article-main {
+    .articles .articles-section .articleSwiper .swiper-wrapper .swiper-slide .article-main {
       display: flex;
       justify-content: space-between;
       margin-top: 50px;
       margin-left: 100px;
       gap: 60px; }
-      .articles .articles-section .article-main .arcticle {
+      .articles .articles-section .articleSwiper .swiper-wrapper .swiper-slide .article-main .arcticle {
         width: 50%; }
-        .articles .articles-section .article-main .arcticle img {
+        .articles .articles-section .articleSwiper .swiper-wrapper .swiper-slide .article-main .arcticle img {
           width: 100%;
           cursor: pointer; }
-        .articles .articles-section .article-main .arcticle h3 {
+        .articles .articles-section .articleSwiper .swiper-wrapper .swiper-slide .article-main .arcticle h3 {
           font-size: 18px;
           color: #8E492B;
           margin-top: 30px;
           cursor: pointer; }
-        .articles .articles-section .article-main .arcticle p {
+        .articles .articles-section .articleSwiper .swiper-wrapper .swiper-slide .article-main .arcticle p {
           font-size: 25px;
           font-weight: 300;
           margin-top: 20px;

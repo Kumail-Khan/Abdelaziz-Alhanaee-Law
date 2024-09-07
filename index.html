@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <style>
-        .main-slider-area img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -38,7 +32,7 @@
                 </div>
             </div>
             <div class="search-box">
-                <input type="search" placeholder="Search" />
+                <input type="search" placeholder="Search">
             </div>
             <div class="sidebar-menu">
                 <ul>
@@ -59,48 +53,40 @@
                     <h2>Abdelaziz Alhanaee</h2>
                     <p>Law Firm</p>
                     <nav>
-                        <hr class="line-1" />
-                        <hr class="line-2" />
+                        <hr class="line-1">
+                        <hr class="line-2">
                     </nav>
                 </div>
                 <div class="main-slider-area">
                     <!-- Swiper -->
-                    <div class="swiper mySwiper">
+
+                    <div class="headerSwiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/header-main-image.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/header-main-image.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/header-main-image.jpg" />
-                            </div>
+                            <div class="swiper-slide"><img src="images/header-main-image.jpg"></div>
+                            <div class="swiper-slide"><img src="images/header-main-image.jpg"></div>
+                            <div class="swiper-slide"><img src="images/header-main-image.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+
                 </div>
                 <!-- slide-area end -->
 
                 <div class="header-right-main">
                     <h1>
-                        Culturally <br />
+                        Culturally <br>
                         Empowered
                     </h1>
                     <button>Our Practices</button>
                 </div>
                 <!-- header-right-main end -->
 
-                <div class="slider-dots">
-                    <i class="fa-solid fa-circle dots active" attr="0" onclick="switchImage(this)"></i>
-                    <i class="fa-solid fa-circle dots" attr="1" onclick="switchImage(this)"></i>
-                    <i class="fa-solid fa-circle dots" attr="2" onclick="switchImage(this)"></i>
-                </div>
+
             </div>
             <!-- header-right end -->
         </div>
         <!-- header end -->
-        <div class="about-us">
+        <div class="about-us" id="aboutUsSection">
             <div class="about-title">
                 <h1>About Us</h1>
             </div>
@@ -248,9 +234,11 @@
                 </div>
                 <!-- left-testamonials end -->
                 <div class="right-testamonials">
-                    <div class="testamonial-section">
-                        <div class="testamonial-section-child">
-                            <div class="testamonial-info active">
+
+
+                    <div class="testamonialSwiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <p>
                                     The best Lawyers and Legal Consultants. Law Firm has a team
                                     who is dedicated and eager to perform. We recommend them as
@@ -264,8 +252,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- testamonial-info end -->
-                            <div class="testamonial-info">
+                            <div class="swiper-slide">
                                 <p>
                                     The best Lawyers and Legal Consultants. Law Firm has a team
                                     who is dedicated and eager to perform. We recommend them as
@@ -279,8 +266,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- testamonial-info end -->
-                            <div class="testamonial-info">
+                            <div class="swiper-slide">
                                 <p>
                                     The best Lawyers and Legal Consultants. Law Firm has a team
                                     who is dedicated and eager to perform. We recommend them as
@@ -294,8 +280,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- testamonial-info end -->
-                            <div class="testamonial-info">
+                            <div class="swiper-slide">
                                 <p>
                                     The best Lawyers and Legal Consultants. Law Firm has a team
                                     who is dedicated and eager to perform. We recommend them as
@@ -309,8 +294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- testamonial-info end -->
-                            <div class="testamonial-info">
+                            <div class="swiper-slide">
                                 <p>
                                     The best Lawyers and Legal Consultants. Law Firm has a team
                                     who is dedicated and eager to perform. We recommend them as
@@ -324,44 +308,118 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- testamonial-info end -->
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                    <!-- right-testamonials end -->
+                </div>
+            </div>
+            <!-- testamonials end -->
+            <div class="articles">
+                <div class="articles-section">
+                    <div class="article-header">
+                        <h1>News & Articles</h1>
+                        <button>READ ALL NEWS AND ARTICLES</button>
+                    </div>
+                    <!-- article-header end -->
+
+
+
+                    <div class="articleSwiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="article-main"></div>
+                                <div class="arcticle">
+                                    <img src="images/article-1.jpg" />
+                                    <h3>Press Release</h3>
+                                    <p>
+                                        Surprise GOP campaign finance law proposal prompts walkout by
+                                        Democratic senators • NC Newsline
+                                    </p>
+                                </div>
+                                <div class="arcticle">
+                                    <img src="images/article-2.jpg" />
+                                    <h3>Article</h3>
+                                    <p>Navigating the UAE's updated pension regulations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-main">
+                                <div class="arcticle">
+                                    <img src="images/article-1.jpg" />
+                                    <h3>Press Release</h3>
+                                    <p>
+                                        Surprise GOP campaign finance law proposal prompts walkout by
+                                        Democratic senators • NC Newsline
+                                    </p>
+                                </div>
+                                <div class="arcticle">
+                                    <img src="images/article-2.jpg" />
+                                    <h3>Article</h3>
+                                    <p>Navigating the UAE's updated pension regulations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-main">
+                                <div class="arcticle">
+                                    <img src="images/article-1.jpg" />
+                                    <h3>Press Release</h3>
+                                    <p>
+                                        Surprise GOP campaign finance law proposal prompts walkout by
+                                        Democratic senators • NC Newsline
+                                    </p>
+                                </div>
+                                <div class="arcticle">
+                                    <img src="images/article-2.jpg" />
+                                    <h3>Article</h3>
+                                    <p>Navigating the UAE's updated pension regulations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-main">
+                                <div class="arcticle">
+                                    <img src="images/article-1.jpg" />
+                                    <h3>Press Release</h3>
+                                    <p>
+                                        Surprise GOP campaign finance law proposal prompts walkout by
+                                        Democratic senators • NC Newsline
+                                    </p>
+                                </div>
+                                <div class="arcticle">
+                                    <img src="images/article-2.jpg" />
+                                    <h3>Article</h3>
+                                    <p>Navigating the UAE's updated pension regulations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-main">
+                                <div class="arcticle">
+                                    <img src="images/article-1.jpg" />
+                                    <h3>Press Release</h3>
+                                    <p>
+                                        Surprise GOP campaign finance law proposal prompts walkout by
+                                        Democratic senators • NC Newsline
+                                    </p>
+                                </div>
+                                <div class="arcticle">
+                                    <img src="images/article-2.jpg" />
+                                    <h3>Article</h3>
+                                    <p>Navigating the UAE's updated pension regulations</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- testamonial-section end -->
-                    <div class="next-buttons">
-                        <p class="indicator active" attr="0">01</p>
-                        <p class="indicator" attr="1">02</p>
-                        <p class="indicator" attr="2">03</p>
-                        <p class="indicator" attr="3">04</p>
-                        <p class="indicator" attr="4">05</p>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <!-- right-testamonials end -->
-            </div>
-        </div>
-        <!-- testamonials end -->
-        <div class="articles">
-            <div class="articles-section">
-                <div class="article-header">
-                    <h1>News & Articles</h1>
-                    <button>READ ALL NEWS AND ARTICLES</button>
-                </div>
-                <!-- article-header end -->
-                <div class="article-main">
-                    <div class="arcticle">
-                        <img src="images/article-1.jpg" />
-                        <h3>Press Release</h3>
-                        <p>
-                            Surprise GOP campaign finance law proposal prompts walkout by
-                            Democratic senators • NC Newsline
-                        </p>
-                    </div>
-                    <div class="arcticle">
-                        <img src="images/article-2.jpg" />
-                        <h3>Article</h3>
-                        <p>Navigating the UAE's updated pension regulations</p>
-                    </div>
-                </div>
+
+
                 <!-- article-main end -->
                 <div class="next-buttons">
                     <p>01</p>
@@ -524,14 +582,45 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        // header main slide
+        var headerSwiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
 
-        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        // header main slide end
+
+        // testamonial slide
+        var testamonialSwiper = new Swiper(".mySwiper", {
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 0) + "</span>";
+                }
             },
         });
+        // testamonial slide end
+
+        // articles slide
+        // var articleSwiper = new Swiper(".mySwiper", {
+        //     loop: true,
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //         renderBullet: function (index, className) {
+        //             return '<span class="' + className + '">' + (index + 0) + "</span>";
+        //         }
+        //     },
+        // });
+        // articles slide end
     </script>
 </body>
 

@@ -134,48 +134,42 @@ body {
         width: 100%;
         position: relative;
 
-        .slide-area {
-
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-
-            img {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                position: absolute;
-            }
+        .headerSwiper {
 
 
-            img:not(.active) {
-                top: 0;
-                left: -100%;
-            }
-
-        }
-
-        .slider-dots {
-            position: absolute;
-            right: 150px;
-            bottom: 90px;
-
-            .dots {
-                color: rgb(175, 175, 175);
-                font-size: 9px;
-                width: 15px;
-                height: 15px;
-                cursor: pointer;
-                transition: 0.2s;
-
-                &:hover {
-                    font-size: 12px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover;
+                    }
                 }
             }
 
-            .active {
-                font-size: 12px;
+            .swiper-pagination {
+                display: flex;
+                justify-content: end;
+                padding: 0 150px 70px 0;
+                align-items: center;
+
             }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                opacity: 0.9;
+                background-color: gray;
+                transition: 0.3s;
+            }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background-color: lightgray;
+                width: 12px;
+                height: 12px;
+            }
+
+
         }
 
 
@@ -534,24 +528,16 @@ body {
             justify-content: center;
             overflow: hidden;
 
-            .testamonial-section {
+            .testamonialSwiper {
                 width: 100%;
+                margin-bottom: 100px;
+                padding-bottom: 100px;
                 position: relative;
-                margin-top: 250px;
 
-                .testamonial-section-child {
-                    width: 100%;
+                .swiper-wrapper {
 
-                    // position: relative;
+                    .swiper-slide {
 
-                    .testamonial-info:not(.active) {
-                        left: -100%;
-                    }
-
-                    .testamonial-info {
-                        position: absolute;
-                        bottom: 0;
-                        width: 100%;
 
                         p {
                             font-size: 30px;
@@ -581,21 +567,33 @@ body {
                 }
             }
 
-            .next-buttons {
+            .swiper-pagination {
                 display: flex;
-                margin-top: 40px;
-                gap: 10px;
+                justify-content: end;
+                position: absolute;
+                bottom: 10px;
+                left: -600px;
+            }
 
-                p {
-                    font-size: 16px;
-                    cursor: pointer;
-                    color: rgb(161, 161, 161);
+            .swiper-pagination-bullet {
+                width: 20px;
+                height: 20px;
+                opacity: 0.9;
+                background-color: white;
+                color: darkgray;
+                transition: 0.3s;
+                font-weight: 600;
 
-                    &:hover {
-                        color: rgb(125, 125, 125);
-                    }
+                &:hover {
+                    color: rgb(102, 102, 102);
                 }
             }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                color: rgb(41, 41, 41);
+            }
+
+
         }
     }
 }
@@ -648,37 +646,49 @@ body {
             }
         }
 
-        .article-main {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            margin-left: 100px;
-            gap: 60px;
 
-            .arcticle {
-                width: 50%;
 
-                img {
-                    width: 100%;
-                    cursor: pointer;
+        .articleSwiper {
+            .swiper-wrapper {
+                .swiper-slide {
 
-                }
+                    .article-main {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 50px;
+                        margin-left: 100px;
+                        gap: 60px;
 
-                h3 {
-                    font-size: 18px;
-                    color: #8E492B;
-                    margin-top: 30px;
-                    cursor: pointer;
-                }
+                        .arcticle {
+                            width: 50%;
 
-                p {
-                    font-size: 25px;
-                    font-weight: 300;
-                    margin-top: 20px;
-                    cursor: pointer;
+                            img {
+                                width: 100%;
+                                cursor: pointer;
+
+                            }
+
+                            h3 {
+                                font-size: 18px;
+                                color: #8E492B;
+                                margin-top: 30px;
+                                cursor: pointer;
+                            }
+
+                            p {
+                                font-size: 25px;
+                                font-weight: 300;
+                                margin-top: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
                 }
             }
         }
+
+
 
         .next-buttons {
             margin-left: 100px;

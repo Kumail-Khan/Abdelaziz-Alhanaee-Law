@@ -1,5 +1,6 @@
 {
-    "nuxt.isNuxtApp": false,
-    "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+  "nuxt.isNuxtApp": false,
+  "pieces.cloudCapabilities": "Blended",
+  "pieces.telemetry": true,
+  "liveServer.settings.port": 5502
 }
