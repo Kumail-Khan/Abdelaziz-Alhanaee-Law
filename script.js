@@ -66,7 +66,27 @@ counterFun();
 // numbers of clients end
 
 
+// faqs dropdown function
+const faqs = document.querySelectorAll(".faq")
 
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active')
+    })
+})
+// faqs dropdown function end
+
+
+
+// teams dropdown function
+const faqs2 = document.querySelectorAll(".faq2")
+
+faqs2.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active')
+    })
+})
+// teams dropdown function end
 
 
 

@@ -134,7 +134,7 @@ body {
         width: 100%;
         position: relative;
 
-        .headerSwiper {
+        .mySwiper-header-main {
 
 
             .swiper-wrapper {
@@ -528,7 +528,7 @@ body {
             justify-content: center;
             overflow: hidden;
 
-            .testamonialSwiper {
+            .mySwiper-testamonial {
                 width: 100%;
                 margin-bottom: 100px;
                 padding-bottom: 100px;
@@ -648,10 +648,13 @@ body {
 
 
 
-        .articleSwiper {
+        .mySwiper-article {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100px;
+
             .swiper-wrapper {
                 .swiper-slide {
-
                     .article-main {
                         display: flex;
                         justify-content: space-between;
@@ -659,7 +662,7 @@ body {
                         margin-left: 100px;
                         gap: 60px;
 
-                        .arcticle {
+                        .article {
                             width: 50%;
 
                             img {
@@ -683,10 +686,38 @@ body {
                             }
                         }
                     }
-
                 }
             }
+
+
+            .swiper-pagination {
+                display: flex;
+                justify-content: start;
+                position: absolute;
+                bottom: 10px;
+                left: 100px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 20px;
+                height: 20px;
+                opacity: 0.9;
+                background-color: #f3f3f3;
+                color: darkgray;
+                transition: 0.3s;
+                font-weight: 600;
+
+                &:hover {
+                    color: rgb(102, 102, 102);
+                }
+            }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                color: rgb(41, 41, 41);
+            }
         }
+
+
 
 
 
@@ -741,49 +772,76 @@ body {
                     margin-top: 100px;
                 }
 
-                .parah {
-                    display: none;
-                }
-
                 .teams-faqs {
-                    .faq {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        height: 150px;
+                    .faq2.active .answer {
+                        max-height: 500px;
+                        margin: 20px 0;
+
+                    }
+
+                    .faq2.active i {
+                        transform: rotate(90deg);
+
+                    }
+
+                    .faq2 {
+
+
                         border-bottom: 1px solid rgba(177, 177, 177, 0.418);
 
-                        .left {
+                        .question {
                             display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 150px;
+                            cursor: pointer;
 
-                            h2 {
-                                font-size: 32px;
-                                font-weight: 400;
-                                color: white;
-                            }
-
-                            p {
-                                font-size: 12px;
-                                font-weight: 600;
-                                color: #8E492B;
-                                margin-top: 20px;
-                                margin-left: 20px;
-                            }
-                        }
-
-                        .right {
-                            i {
-                                background-color: rgba(180, 180, 180, 0.738);
-                                color: #8E492B;
-                                font-size: 20px;
-                                width: 38px;
-                                height: 38px;
-                                border-radius: 50%;
+                            .left {
                                 display: flex;
-                                align-items: center;
-                                justify-content: center;
+
+                                h2 {
+                                    font-size: 32px;
+                                    font-weight: 400;
+                                    color: white;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    color: #8E492B;
+                                    margin-top: 20px;
+                                    margin-left: 20px;
+                                }
+                            }
+
+                            .right {
+                                i {
+                                    background-color: rgba(180, 180, 180, 0.738);
+                                    color: #8E492B;
+                                    font-size: 20px;
+                                    width: 38px;
+                                    height: 38px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    transition: 0.4s;
+                                }
                             }
                         }
+
+                        .answer {
+
+                            max-height: 0px;
+                            font-size: 20px;
+                            word-spacing: 2px;
+                            transition: 0.4s ease-in;
+                            overflow: hidden;
+                            color: white;
+
+                        }
+
+
                     }
                 }
             }
