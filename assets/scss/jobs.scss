@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+    // height: 100vh;
+
+
+    .header-left {
+        width: 80px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px;
+        padding-bottom: 0;
+        align-items: center;
+        background-color: black;
+        position: relative;
+        position: fixed;
+        top: 0;
+        z-index: 15;
+
+        .menu {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cancel {
+            font-size: 35px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        .search {
+            font-size: 30px;
+            background-color: white;
+            width: 80px;
+            height: 80px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: rgb(190, 190, 190);
+            }
+        }
+
+        .cancel-2 {
+            font-size: 30px;
+            background-color: white;
+            width: 80px;
+            height: 80px;
+            padding: 30px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: rgb(190, 190, 190);
+            }
+        }
+    }
+
+    .search-box {
+        position: absolute;
+        bottom: 0;
+        left: -1800px;
+        position: fixed;
+        z-index: 11;
+        transition: 0.5s;
+
+        input {
+            width: 1840px;
+            height: 80px;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            transition: 0.5s;
+        }
+    }
+
+    .sidebar-menu {
+        width: 650px;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 10;
+        background-color: #5a2a14;
+        position: absolute;
+        top: 0;
+        left: -580px;
+        position: fixed;
+        transition: 0.3s;
+
+        ul {
+            a {
+                text-decoration: none;
+
+                li {
+                    list-style: none;
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: white;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .header-right {
+        width: 100%;
+        height: 300px;
+        position: relative;
+
+
+        .about-header-main-img {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+}
+
+.header-right-top {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    z-index: 11;
+
+    h2 {
+
+        color: white;
+        font-weight: 300;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+        margin-left: 100px;
+        margin-top: 8px;
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+
+    nav {
+        position: relative;
+
+        .line-1 {
+            position: absolute;
+            top: -12px;
+            left: -150px;
+            color: white;
+            width: 230px;
+            height: 2px;
+            background-color: white;
+        }
+
+        .line-2 {
+            position: absolute;
+            top: -12px;
+            left: 225px;
+            color: white;
+            width: 1427px;
+            height: 2px;
+            background-color: white;
+        }
+
+    }
+}
+
+.header-right-main {
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    color: white;
+    z-index: 5;
+
+    h1 {
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 90px;
+    }
+
+}
+
+// header end
+
+
+.job-offer-section {
+    color: white;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+
+    .job-offer-title {
+        width: 75%;
+        margin: auto;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            color: #8E492B;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+
+    .job-offer-parah {
+        width: 75%;
+        margin: auto;
+
+        p {
+            margin-top: 30px;
+            font-size: 50px;
+            font-weight: 300;
+            word-spacing: -5px;
+            line-height: 50px;
+        }
+    }
+
+    .submit-cv-section {
+        width: 75%;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .associate,
+        .graphic-designer {
+            width: 100%;
+            height: 200px;
+            border: 1px solid rgb(77, 77, 77);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+
+                h1 {
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: rgb(190, 190, 190);
+                    margin-top: 10px;
+                }
+            }
+
+            a {
+                button {
+                    color: white;
+                    width: 170px;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    background: black;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    border-radius: 30px;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid rgb(87, 87, 87);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// job-offer-section end
+
+
+
+
+.uptodate {
+    width: 100%;
+    background-color: #1a1a1af4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .uptodate-section {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: #1a1a1a;
+        padding: 70px 0;
+        position: relative;
+        overflow: hidden;
+
+        .style {
+            width: 75px;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            background-color: #6B3117;
+        }
+
+        .child {
+            width: 70%;
+
+            h1 {
+                color: rgb(214, 214, 214);
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            .email-section {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    border-radius: 40px;
+                    height: 50px;
+                    background-color: #1f1f1f;
+                    color: rgb(120, 120, 120);
+                    outline: none;
+                    border: 1px solid rgba(158, 158, 158, 0.625);
+                    font-size: 18px;
+                    padding-left: 30px;
+                }
+
+                button {
+                    position: absolute;
+                    right: 2px;
+                    bottom: 1px;
+                    background-color: black;
+                    color: white;
+                    outline: none;
+                    border: none;
+                    height: 48px;
+                    width: 220px;
+                    border-radius: 40px;
+                    cursor: pointer;
+                    transition: 0.1s;
+
+                    &:hover {
+                        background-color: #6B3117;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// uptodate end
+
+
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    .footer-top {
+        margin-left: 250px;
+        padding-top: 150px;
+
+        h2 {
+
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: white;
+            font-weight: 300;
+            margin-left: 100px;
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: 6px;
+        }
+
+        nav {
+            position: relative;
+
+            .line-1 {
+                position: absolute;
+                top: -12px;
+                left: -150px;
+                color: white;
+                width: 230px;
+                height: 2px;
+                background-color: white;
+            }
+
+            .line-2 {
+                position: absolute;
+                top: -12px;
+                left: 225px;
+                color: white;
+                width: 1427px;
+                height: 2px;
+                background-color: white;
+            }
+
+        }
+    }
+
+
+
+
+    .footer-section {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 100px;
+
+        .links {
+            display: flex;
+            margin-top: 80px;
+
+            .quick-links,
+            .experties-links {
+                margin-right: 150px;
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-bottom: 50px;
+                }
+
+                ul {
+                    li {
+                        list-style: none;
+                        margin-bottom: 15px;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 18px;
+                            font-weight: 300;
+
+                            &:hover {
+                                border-bottom: 1px solid white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding-top: 50px;
+            gap: 150px;
+
+            .contact-number {
+                p {
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            .social-logo {
+
+
+                img {
+                    width: 40px;
+                    background-color: white;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+}
+
+// footer end
+
+.copyright-section {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+// copyright-section end

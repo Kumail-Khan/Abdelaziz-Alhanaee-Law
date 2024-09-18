@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  overflow-x: hidden; }
+
+.header {
+  display: flex;
+  width: 100%; }
+  .header .header-left {
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    padding-bottom: 0;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 15; }
+    .header .header-left .menu {
+      font-size: 30px;
+      color: white;
+      cursor: pointer; }
+    .header .header-left .cancel {
+      font-size: 35px;
+      color: white;
+      cursor: pointer;
+      display: none; }
+    .header .header-left .search {
+      font-size: 30px;
+      background-color: white;
+      width: 80px;
+      height: 80px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      transition: 0.2s; }
+      .header .header-left .search:hover {
+        background-color: #bebebe; }
+    .header .header-left .cancel-2 {
+      font-size: 30px;
+      background-color: white;
+      width: 80px;
+      height: 80px;
+      padding: 30px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      display: none;
+      transition: 0.2s; }
+      .header .header-left .cancel-2:hover {
+        background-color: #bebebe; }
+  .header .search-box {
+    position: absolute;
+    bottom: 0;
+    left: -1800px;
+    position: fixed;
+    z-index: 11;
+    transition: 0.5s; }
+    .header .search-box input {
+      width: 1840px;
+      height: 80px;
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 500;
+      transition: 0.5s; }
+  .header .sidebar-menu {
+    width: 650px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+    background-color: #5a2a14;
+    position: absolute;
+    top: 0;
+    left: -580px;
+    position: fixed;
+    transition: 0.3s; }
+    .header .sidebar-menu ul a {
+      text-decoration: none; }
+      .header .sidebar-menu ul a li {
+        list-style: none;
+        font-size: 25px;
+        font-weight: 300;
+        color: white;
+        margin-top: 15px;
+        cursor: pointer;
+        text-transform: uppercase; }
+        .header .sidebar-menu ul a li:hover {
+          text-decoration: underline; }
+  .header .header-right {
+    width: 100%;
+    height: 300px;
+    position: relative; }
+    .header .header-right .about-header-main-img img {
+      object-fit: cover;
+      width: 100%;
+      height: 300px; }
+
+.header-right-top {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  z-index: 11; }
+  .header-right-top h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 2px; }
+  .header-right-top p {
+    color: white;
+    font-weight: 300;
+    margin-left: 100px;
+    margin-top: 8px;
+    font-size: 18px;
+    letter-spacing: 6px; }
+  .header-right-top nav {
+    position: relative; }
+    .header-right-top nav .line-1 {
+      position: absolute;
+      top: -12px;
+      left: -150px;
+      color: white;
+      width: 230px;
+      height: 2px;
+      background-color: white; }
+    .header-right-top nav .line-2 {
+      position: absolute;
+      top: -12px;
+      left: 225px;
+      color: white;
+      width: 1427px;
+      height: 2px;
+      background-color: white; }
+
+.header-right-main {
+  position: absolute;
+  top: 170px;
+  left: 250px;
+  color: white;
+  z-index: 5; }
+  .header-right-main h1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px; }
+
+.about-overview {
+  color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 0px; }
+  .about-overview .overview-title {
+    width: 75%;
+    margin: auto; }
+    .about-overview .overview-title h1 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: #8E492B;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+  .about-overview .overview-main {
+    display: flex;
+    align-items: baseline;
+    width: 75%;
+    margin: auto;
+    gap: 100px;
+    padding-top: 30px; }
+    .about-overview .overview-main .overview-left {
+      width: 40%; }
+      .about-overview .overview-main .overview-left h1 {
+        font-size: 65px;
+        font-weight: 400; }
+    .about-overview .overview-main .overview-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .about-overview .overview-main .overview-right h1 {
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 50px;
+        margin-bottom: 100px; }
+      .about-overview .overview-main .overview-right p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 20px; }
+      .about-overview .overview-main .overview-right button {
+        margin-top: 80px;
+        width: 55%;
+        height: 50px;
+        border-radius: 40px;
+        font-size: 17px;
+        color: white;
+        background-color: black;
+        outline: none;
+        border: 1px solid black;
+        cursor: pointer; }
+        .about-overview .overview-main .overview-right button:hover {
+          border: 1px solid #5e5e5e; }
+  .about-overview .overview-image-section {
+    width: 100%;
+    margin-top: 150px; }
+    .about-overview .overview-image-section .overview-image {
+      margin-left: 80px;
+      overflow: hidden;
+      position: relative;
+      height: 560px; }
+      .about-overview .overview-image-section .overview-image img {
+        object-fit: cover;
+        z-index: 1;
+        height: 560px;
+        width: 100%; }
+      .about-overview .overview-image-section .overview-image .img-style {
+        position: absolute;
+        top: 0;
+        width: 80px;
+        height: 100vh;
+        background-color: #8E492B;
+        z-index: 2; }
+  .about-overview .overview-numbers-section .overview-num-top-parent {
+    width: 75%;
+    margin: auto;
+    display: flex; }
+    .about-overview .overview-numbers-section .overview-num-top-parent div {
+      width: 50%; }
+    .about-overview .overview-numbers-section .overview-num-top-parent .overview-num-top {
+      width: 50%; }
+      .about-overview .overview-numbers-section .overview-num-top-parent .overview-num-top h1 {
+        font-size: 50px;
+        font-weight: 300;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: left; }
+      .about-overview .overview-numbers-section .overview-num-top-parent .overview-num-top p {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 50px; }
+  .about-overview .overview-numbers-section .overview-num-bottom {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 100px; }
+    .about-overview .overview-numbers-section .overview-num-bottom div {
+      display: flex;
+      align-items: end;
+      justify-content: left;
+      width: 50%;
+      margin-bottom: 120px; }
+      .about-overview .overview-numbers-section .overview-num-bottom div h1 {
+        font-size: 170px;
+        font-weight: 300; }
+      .about-overview .overview-numbers-section .overview-num-bottom div p {
+        margin-bottom: 40px;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 2px; }
+
+.overview-slider-section {
+  color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px; }
+  .overview-slider-section .overview-slider-title {
+    width: 75%;
+    margin: auto; }
+    .overview-slider-section .overview-slider-title h1 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: #8E492B;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+  .overview-slider-section .overview-slider-parah {
+    width: 75%;
+    margin: auto; }
+    .overview-slider-section .overview-slider-parah p {
+      margin-top: 30px;
+      font-size: 50px;
+      font-weight: 300;
+      word-spacing: -5px;
+      line-height: 50px; }
+  .overview-slider-section .swiper {
+    width: 100%;
+    height: 380px;
+    margin-top: 100px; }
+  .overview-slider-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #2A2929;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .overview-slider-section .swiper-slide img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative; }
+    .overview-slider-section .swiper-slide img:hover + .parah {
+      height: 360px;
+      opacity: 1; }
+  .overview-slider-section .swiper-slide .parah {
+    position: absolute;
+    bottom: -60px;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.986);
+    transition: 0.3s all ease-out;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    opacity: 0.1; }
+    .overview-slider-section .swiper-slide .parah h1 {
+      font-size: 26px;
+      font-weight: 400; }
+    .overview-slider-section .swiper-slide .parah p {
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 40px; }
+    .overview-slider-section .swiper-slide .parah:hover {
+      height: 360px;
+      opacity: 1; }
+  .overview-slider-section .swiper-button-prev {
+    margin-left: 100px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white; }
+  .overview-slider-section .swiper-button-next {
+    margin-right: 100px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white; }
+  .overview-slider-section .slider-readmore-buttons {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px; }
+    .overview-slider-section .slider-readmore-buttons .readmore,
+    .overview-slider-section .slider-readmore-buttons .viewall {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 20px;
+      width: 218px;
+      height: 50px;
+      border-radius: 40px;
+      background-color: #6B3117;
+      color: white;
+      cursor: pointer;
+      transition: 0.1s all ease-in; }
+      .overview-slider-section .slider-readmore-buttons .readmore:hover,
+      .overview-slider-section .slider-readmore-buttons .viewall:hover {
+        background-color: #502512; }
+      .overview-slider-section .slider-readmore-buttons .readmore a,
+      .overview-slider-section .slider-readmore-buttons .viewall a {
+        text-decoration: none; }
+        .overview-slider-section .slider-readmore-buttons .readmore a h1,
+        .overview-slider-section .slider-readmore-buttons .viewall a h1 {
+          font-size: 18px;
+          font-weight: 400;
+          color: white; }
+      .overview-slider-section .slider-readmore-buttons .readmore i,
+      .overview-slider-section .slider-readmore-buttons .viewall i {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: black;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .overview-slider-section .slider-readmore-buttons .viewall {
+      background-color: transparent;
+      border: 1px solid #636363; }
+      .overview-slider-section .slider-readmore-buttons .viewall:hover {
+        background-color: black; }
+
+.careers-culture-section {
+  color: white;
+  background-color: #1e1e1e;
+  padding: 150px 0;
+  width: 100%; }
+  .careers-culture-section .careers-culture {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+    margin: auto; }
+    .careers-culture-section .careers-culture .careers-culture-image {
+      margin-left: 80px;
+      overflow: hidden;
+      position: relative;
+      height: 510px; }
+      .careers-culture-section .careers-culture .careers-culture-image img {
+        object-fit: cover;
+        z-index: 1;
+        width: 100%;
+        height: 100%; }
+      .careers-culture-section .careers-culture .careers-culture-image .img-style {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 100vh;
+        background-color: #8E492B;
+        z-index: 2; }
+    .careers-culture-section .careers-culture .careers-culture-info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .careers-culture-section .careers-culture .careers-culture-info span {
+        color: #8E492B;
+        font-size: 20px;
+        margin-bottom: 50px;
+        letter-spacing: 3px; }
+      .careers-culture-section .careers-culture .careers-culture-info p {
+        font-size: 50px;
+        font-weight: 300;
+        word-spacing: -5px; }
+      .careers-culture-section .careers-culture .careers-culture-info .info-button {
+        display: flex;
+        align-items: center;
+        margin-top: 50px; }
+        .careers-culture-section .careers-culture .careers-culture-info .info-button button {
+          color: white;
+          width: 170px;
+          height: 40px;
+          border: none;
+          outline: none;
+          background: black;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          border-radius: 30px;
+          cursor: pointer; }
+          .careers-culture-section .careers-culture .careers-culture-info .info-button button:hover {
+            border: 1px solid #575757; }
+
+.uptodate {
+  width: 100%;
+  background-color: #1a1a1af4;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .uptodate .uptodate-section {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #1a1a1a;
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden; }
+    .uptodate .uptodate-section .style {
+      width: 75px;
+      height: 100vh;
+      position: absolute;
+      left: 0;
+      background-color: #6B3117; }
+    .uptodate .uptodate-section .child {
+      width: 70%; }
+      .uptodate .uptodate-section .child h1 {
+        color: #d6d6d6;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 30px; }
+      .uptodate .uptodate-section .child .email-section {
+        position: relative; }
+        .uptodate .uptodate-section .child .email-section input {
+          width: 100%;
+          border-radius: 40px;
+          height: 50px;
+          background-color: #1f1f1f;
+          color: #787878;
+          outline: none;
+          border: 1px solid rgba(158, 158, 158, 0.625);
+          font-size: 18px;
+          padding-left: 30px; }
+        .uptodate .uptodate-section .child .email-section button {
+          position: absolute;
+          right: 2px;
+          bottom: 1px;
+          background-color: black;
+          color: white;
+          outline: none;
+          border: none;
+          height: 48px;
+          width: 220px;
+          border-radius: 40px;
+          cursor: pointer;
+          transition: 0.1s; }
+          .uptodate .uptodate-section .child .email-section button:hover {
+            background-color: #6B3117; }
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white; }
+  .footer .footer-top {
+    margin-left: 250px;
+    padding-top: 150px; }
+    .footer .footer-top h2 {
+      color: white;
+      font-weight: 300;
+      font-size: 30px;
+      letter-spacing: 2px; }
+    .footer .footer-top p {
+      color: white;
+      font-weight: 300;
+      margin-left: 100px;
+      margin-top: 8px;
+      font-size: 18px;
+      letter-spacing: 6px; }
+    .footer .footer-top nav {
+      position: relative; }
+      .footer .footer-top nav .line-1 {
+        position: absolute;
+        top: -12px;
+        left: -150px;
+        color: white;
+        width: 230px;
+        height: 2px;
+        background-color: white; }
+      .footer .footer-top nav .line-2 {
+        position: absolute;
+        top: -12px;
+        left: 225px;
+        color: white;
+        width: 1427px;
+        height: 2px;
+        background-color: white; }
+  .footer .footer-section {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 100px; }
+    .footer .footer-section .links {
+      display: flex;
+      margin-top: 80px; }
+      .footer .footer-section .links .quick-links,
+      .footer .footer-section .links .experties-links {
+        margin-right: 150px; }
+        .footer .footer-section .links .quick-links h1,
+        .footer .footer-section .links .experties-links h1 {
+          font-size: 30px;
+          font-weight: 400;
+          margin-bottom: 50px; }
+        .footer .footer-section .links .quick-links ul li,
+        .footer .footer-section .links .experties-links ul li {
+          list-style: none;
+          margin-bottom: 15px; }
+          .footer .footer-section .links .quick-links ul li a,
+          .footer .footer-section .links .experties-links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 300; }
+            .footer .footer-section .links .quick-links ul li a:hover,
+            .footer .footer-section .links .experties-links ul li a:hover {
+              border-bottom: 1px solid white; }
+    .footer .footer-section .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-top: 50px;
+      gap: 150px; }
+      .footer .footer-section .social-media .contact-number p {
+        font-size: 30px;
+        cursor: pointer; }
+      .footer .footer-section .social-media .social-logo img {
+        width: 40px;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 20px;
+        cursor: pointer; }
+
+.copyright-section {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/*# sourceMappingURL=about.css.map */
