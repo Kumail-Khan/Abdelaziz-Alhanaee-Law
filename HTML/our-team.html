@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Abdelaziz Alhanaee Law</title>
     <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-    <link rel="stylesheet" href="/assets/css/jobs.css">
+    <link rel="stylesheet" href="/assets/css/our-team.css">
     <link rel="stylesheet" href="/assets/css/basic.css" />
     <script src="https://kit.fontawesome.com/9fa5e4001d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -50,10 +50,10 @@
                     <a href="awards.html">
                         <li>awards</li>
                     </a>
-                    <a href="/HTML/news-article-page.html">
+                    <a href="news-article-details.html">
                         <li>news and articles</li>
                     </a>
-                    <a href="/HTML/jobs.html">
+                    <a href="jobs.html">
                         <li>careers</li>
                     </a>
                     <a href="">
@@ -77,13 +77,13 @@
                 <div class="about-header-main-img">
 
 
-                    <img src="/images/jobs-header-image.jpg " alt="">
+                    <img src="/images/about-haeder-image.jpg " alt="">
 
                 </div>
                 <!-- about-header-main-img end -->
 
                 <div class="header-right-main">
-                    <h1> Careers </h1>
+                    <h1>Our Team</h1>
                 </div>
                 <!-- header-right-main end -->
 
@@ -94,45 +94,79 @@
         <!-- header end -->
 
 
-        <div class="job-offer-section">
-            <div class="job-offer-title">
-                <h1>JOB OFFERS</h1>
-            </div>
-            <!-- job-offer-title end -->
-            <div class="job-offer-parah">
-                <p>As a thriving Business law firm, Abdelaziz <br> Alhanaee is always on the lookout for <br>
-                    exceptionally
-                    talented lawyers to join our Team</p>
-            </div>
-            <!-- job-offer-parah end -->
-            <div class="submit-cv-section">
-                <div class="associate">
-                    <div class="info">
-                        <h1>Associate ( male/Female )</h1>
-                        <p>We are looking for an Arabic speaking associate with a good command of Arabic and English.
+
+
+
+
+
+        <div class="articles-section">
+            <div class="articles">
+                <h1>OVERVIEW</h1>
+                <p>We exceed our client's <br>
+                    expectations with service <br>
+                    and value.</p>
+                <div class="article-main">
+                    <div class="article">
+                        <div class="image-section">
+                            <img src="/images/main-actor-2.png" alt="">
+                        </div>
+                        <h3>Abdelaziz Alhanaee</h3>
+                        <p>
+                            FOUNDER AND MANAGING PARTNER
                         </p>
+                        <a href="mailto:abdelaziz@alhanaee.com">
+                            <p>abdelaziz@alhanaee.com</p>
+                        </a>
+                        <span></span>
                     </div>
-                    <!-- info end -->
-                    <a href="mailto:laimukkhanthird@gmail.com"><button>Submit CV</button></a>
-                </div>
-                <!-- associate end -->
-                <div class="graphic-designer">
-                    <div class="info">
-                        <h1>Graphic Designer ( male/Female )</h1>
-                        <p>We are seeking a creative and skilled Graphic Designer with proficiency in Adobe Creative
-                            Suite, particularly Photoshop and Illustrator. The ideal candidate should have a strong
-                            portfolio demonstrating their ability to create visually appealing designs for both print
-                            and digital media.
+                    <div class="article">
+                        <div class="image-section">
+                            <img src="/images/person-2.png" id="person2">
+                        </div>
+                        <h3>Abdelaziz Alhanaee</h3>
+                        <p>
+                            FOUNDER AND MANAGING PARTNER
                         </p>
+                        <a href="mailto:abdelaziz@alhanaee.com">
+                            <p>abdelaziz@alhanaee.com</p>
+                        </a>
+                        <span></span>
                     </div>
-                    <!-- info end -->
-                    <a href="mailto:laimukkhanthird@gmail.com"><button>Submit CV</button></a>
                 </div>
-                <!-- Graphic-Designer end -->
+                <!-- article-main end -->
+                <div class="article-main">
+                    <div class="article">
+                        <div class="image-section">
+                            <img src="/images/person-3.png" id="person3">
+                        </div>
+                        <h3>Abdelaziz Alhanaee</h3>
+                        <p>
+                            FOUNDER AND MANAGING PARTNER
+                        </p>
+                        <a href="mailto:abdelaziz@alhanaee.com">
+                            <p>abdelaziz@alhanaee.com</p>
+                        </a>
+                        <span></span>
+                    </div>
+                    <div class="article">
+                        <div class="image-section">
+                            <img src="/images/person-4.png" id="person4">
+                        </div>
+                        <h3>Abdelaziz Alhanaee</h3>
+                        <p>
+                            FOUNDER AND MANAGING PARTNER
+                        </p>
+                        <a href="mailto:abdelaziz@alhanaee.com">
+                            <p>abdelaziz@alhanaee.com</p>
+                        </a>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- article-main end -->
+
             </div>
-            <!-- submit-cv-section  -->
         </div>
-        <!-- job-offer-section end -->
+        <!-- articles end -->
 
 
 
@@ -204,7 +238,7 @@
                 © 2024 Abdelaziz Alhanaee Advocates & Legal Consultancy. All Rights
                 Reserved.
             </p>
-            <p>Design and Developed by ICON Advertising</p>
+            <p>Design and Developed by Kumail Khan</p>
         </div>
         <!-- copyright-section end -->
 
@@ -224,6 +258,18 @@
             prevEl: ".swiper-button-prev",
         },
     });
+
+    const popup = document.querySelector("#popupArticle")
+    const popupBtn = document.querySelector("#popupBtn1")
+    const closePopup = document.querySelector("#close-popup")
+
+    popupBtn.addEventListener("click", () => {
+        popup.style.display = "block";
+    })
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
+    })
+
 </script>
 
 </html>

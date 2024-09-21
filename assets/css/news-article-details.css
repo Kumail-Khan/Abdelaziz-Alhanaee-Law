@@ -103,12 +103,12 @@ body {
           text-decoration: underline; }
   .header .header-right {
     width: 100%;
-    height: 300px;
+    height: 730px;
     position: relative; }
     .header .header-right .about-header-main-img img {
       object-fit: cover;
       width: 100%;
-      height: 300px; }
+      height: 730px; }
 
 .header-right-top {
   position: absolute;
@@ -157,54 +157,114 @@ body {
     font-weight: 400;
     line-height: 90px; }
 
-.articles-section {
+.news-article-detaile-headlines-section {
   width: 100%;
-  background-color: #1a1a1af4;
   padding-top: 100px;
-  padding-bottom: 100px; }
-  .articles-section .articles {
+  padding-bottom: 50px;
+  background-color: #1f1f1f;
+  color: #d4d4d4; }
+  .news-article-detaile-headlines-section .news-article-detaile-headlines {
     width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: auto; }
-    .articles-section .articles .article-main {
+    .news-article-detaile-headlines-section .news-article-detaile-headlines span {
+      font-size: 60px;
+      font-weight: 300;
+      color: white;
+      word-spacing: -5px;
+      margin-right: 100px;
+      line-height: 60px; }
+    .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines {
+      display: flex;
+      margin-top: 100px;
+      gap: 70px; }
+      .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .left-headline {
+        width: 50%; }
+        .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .left-headline p {
+          font-size: 28px;
+          word-spacing: -3px; }
+      .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline {
+        width: 50%; }
+        .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline .dot-section .parah {
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 10px; }
+          .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline .dot-section .parah p {
+            font-size: 16px; }
+          .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline .dot-section .parah i {
+            font-size: 8px;
+            margin-right: 10px; }
+        .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline .normal-section {
+          margin-left: 20px;
+          margin-top: 20px; }
+          .news-article-detaile-headlines-section .news-article-detaile-headlines .headlines .right-headline .normal-section p {
+            margin-bottom: 15px;
+            line-height: 18px;
+            word-spacing: 2px; }
+
+.articles {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #1f1f1f; }
+  .articles .articles-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto; }
+    .articles .articles-section .article-header {
       display: flex;
       justify-content: space-between;
-      gap: 100px;
-      margin-bottom: 100px; }
-      .articles-section .articles .article-main .article {
-        width: 50%; }
-        .articles-section .articles .article-main .article .image-section {
-          overflow: hidden;
-          position: relative; }
-          .articles-section .articles .article-main .article .image-section img {
+      margin-left: 50px; }
+      .articles .articles-section .article-header h1 {
+        font-size: 48px;
+        font-weight: 300;
+        color: #8E492B; }
+      .articles .articles-section .article-header button {
+        padding: 17px;
+        width: 300px;
+        border: 1px solid rgba(87, 87, 87, 0.62);
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border-radius: 30px;
+        color: #707070;
+        cursor: pointer; }
+        .articles .articles-section .article-header button:hover {
+          background-color: black;
+          color: white; }
+    .articles .articles-section .mySwiper-article {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100px; }
+      .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 50px;
+        gap: 60px; }
+        .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article {
+          width: 50%; }
+          .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article img {
             width: 100%;
             cursor: pointer; }
-          .articles-section .articles .article-main .article .image-section .img-style {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 30px;
-            background-color: #8E492B;
-            z-index: 2; }
-          .articles-section .articles .article-main .article .image-section p {
-            position: absolute;
-            bottom: 5px;
-            left: 15px;
-            font-size: 16px;
-            color: white;
-            z-index: 3; }
-        .articles-section .articles .article-main .article h3 {
-          font-size: 18px;
-          color: #8E492B;
-          margin-top: 40px;
-          cursor: pointer; }
-        .articles-section .articles .article-main .article a {
-          text-decoration: none; }
-          .articles-section .articles .article-main .article a p {
+          .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article h3 {
+            font-size: 18px;
+            color: #8E492B;
+            margin-top: 30px;
+            cursor: pointer; }
+          .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article p {
             font-size: 25px;
-            font-weight: 400;
-            margin-top: 10px;
+            font-weight: 300;
+            margin-top: 20px;
             cursor: pointer;
-            color: #b8b8b8; }
+            color: white; }
 
 .uptodate {
   width: 100%;
@@ -353,4 +413,4 @@ body {
   justify-content: space-evenly;
   align-items: center; }
 
-/*# sourceMappingURL=news-article.css.map */
+/*# sourceMappingURL=news-article-details.css.map */

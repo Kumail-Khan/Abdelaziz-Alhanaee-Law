@@ -222,57 +222,279 @@ body {
 // header end
 
 
+.legal-service-section {
+    width: 100%;
+    background-color: #1a1a1af4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+
+    .legal-service {
+        width: 75%;
+        margin: auto;
+
+        h1 {
+            color: #6B3117;
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: 400;
+        }
+
+        P {
+            font-size: 65px;
+            font-weight: 300;
+            margin-top: 20px;
+            word-spacing: -5px;
+        }
+
+        .legal-service-image {
+            overflow: hidden;
+            position: relative;
+            margin-top: 80px;
+
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            .img-style {
+                position: absolute;
+                top: 0;
+                width: 60px;
+                height: 100vh;
+                background-color: #5a2a14;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// legal-service-section end
+
+.legal-advise-section {
+    width: 100%;
+    background-color: #1a1a1af4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+
+    .legal-advise {
+        width: 75%;
+        margin: auto;
+
+        h1 {
+            color: #6B3117;
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: 400;
+        }
+
+        P {
+            font-size: 45px;
+            font-weight: 300;
+            margin-top: 20px;
+            word-spacing: -5px;
+        }
+
+        .legal-advise-info {
+            display: flex;
+            gap: 80px;
+            margin-top: 50px;
+
+            .left {
+                width: 50%;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: rgb(216, 216, 216);
+                    line-height: 20px;
+                    word-spacing: 1px;
+                }
+            }
+
+            .right {
+                width: 50%;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: rgb(216, 216, 216);
+                    line-height: 20px;
+                    word-spacing: 1px;
+                }
+
+
+
+                .legal-advise-links {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid rgb(133, 133, 133);
+                    padding-top: 20px;
+
+                    span {
+                        border: 1px solid rgb(173, 173, 173);
+                        border-radius: 40px;
+                        padding: 8px 20px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: black;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(177, 177, 177);
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// legal-advise-section end
+
+
+// nav {
+//     position: absolute;
+//     right: 0;
+//     z-index: 12;
+//     width: 100%;
+//     height: 100vh;
+//     background-color: rgba(0, 0, 0, 0.774);
+
+//     .popup-parent {
+
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+
+//         .popup-artcile {
+//             width: 1500px;
+//             height: 500px;
+//             background-color: white;
+//             color: black;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-evenly;
+//             position: relative;
+//             overflow: hidden;
+
+//             .img-style {
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 0;
+//                 width: 60px;
+//                 height: 100vh;
+//                 background-color: #5a2a14;
+//                 z-index: 2;
+//             }
+
+//             h1 {
+//                 font-size: 65px;
+//                 font-weight: 500;
+//                 color: rgb(26, 26, 26);
+//                 width: 50%;
+//                 line-height: 65px;
+//                 display: flex;
+//                 justify-content: center;
+//                 padding-bottom: 50px;
+//             }
+
+//             span {
+//                 width: 50%;
+
+//                 p {
+//                     font-size: 16px;
+//                     margin-top: 20px;
+//                     line-height: 20px;
+//                     color: rgb(122, 122, 122);
+//                     margin-right: 100px;
+//                 }
+//             }
+
+//             i {
+//                 font-size: 40px;
+//                 color: rgb(146, 146, 146);
+//                 cursor: pointer;
+//                 position: absolute;
+//                 top: 10px;
+//                 right: 15px;
+//                 transition: all 0.1s;
+
+//                 &:hover {
+//                     color: rgb(37, 37, 37);
+//                 }
+//             }
+//         }
+//     }
+
+//     #popupArticle {
+//         display: block;
+//     }
+
+// }
+
+// .popup-parent end
+
+
+
+
 .articles-section {
     width: 100%;
     background-color: #1a1a1af4;
     padding-top: 100px;
     padding-bottom: 100px;
+    z-index: 1;
 
     .articles {
         width: 75%;
         margin: auto;
 
+        h1 {
+            font-size: 65px;
+            font-weight: 300;
+            color: white;
+            line-height: 65px;
+            margin-bottom: 50px;
+        }
 
         .article-main {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             gap: 100px;
             margin-bottom: 100px;
 
             .article {
                 width: 50%;
 
+
+
+
+
                 .image-section {
                     overflow: hidden;
                     position: relative;
+                    height: 320px;
 
                     img {
                         width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                         cursor: pointer;
                     }
 
-                    .img-style {
-                        position: absolute;
-                        bottom: 0;
-                        width: 100%;
-                        height: 30px;
-                        background-color: #8E492B;
-                        z-index: 2;
-                    }
-
-                    p {
-                        position: absolute;
-                        bottom: 5px;
-                        left: 15px;
-                        font-size: 16px;
-                        color: white;
-                        z-index: 3;
-                    }
                 }
 
                 h3 {
-                    font-size: 18px;
-                    color: #8E492B;
+                    font-size: 42px;
+                    font-weight: 300;
+                    color: white;
                     margin-top: 40px;
                     cursor: pointer;
                 }
@@ -281,11 +503,33 @@ body {
                     text-decoration: none;
 
                     p {
-                        font-size: 25px;
-                        font-weight: 400;
+                        font-size: 16px;
+                        font-weight: 300;
                         margin-top: 10px;
                         cursor: pointer;
-                        color: rgb(184, 184, 184);
+                        color: rgb(235, 235, 235);
+                    }
+                }
+
+                a {
+
+
+                    button {
+                        margin-top: 50px;
+                        width: 175px;
+                        height: 38px;
+                        border: none;
+                        outline: none;
+                        border-radius: 40px;
+                        background-color: black;
+                        color: white;
+                        font-size: 16px;
+                        cursor: pointer;
+                        font-weight: 400;
+
+                        &:hover {
+                            border: 1px solid rgb(107, 107, 107);
+                        }
                     }
                 }
             }
@@ -294,6 +538,8 @@ body {
 }
 
 // .articles-section end
+
+
 
 
 .uptodate {

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Abdelaziz Alhanaee Law</title>
+    <title>faq | Abdelaziz Alhanaee Law</title>
     <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-    <link rel="stylesheet" href="/assets/css/jobs.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" href="/assets/css/basic.css" />
     <script src="https://kit.fontawesome.com/9fa5e4001d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,10 +56,10 @@
                     <a href="/HTML/jobs.html">
                         <li>careers</li>
                     </a>
-                    <a href="">
+                    <a href="faqs.html">
                         <li>faq</li>
                     </a>
-                    <a href="">
+                    <a href="contact.html">
                         <li>contact us</li>
                     </a>
                 </ul>
@@ -77,63 +77,76 @@
                 <div class="about-header-main-img">
 
 
-                    <img src="/images/jobs-header-image.jpg " alt="">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="2000" height="360" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://123movies-to.org">123movies</a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 360px;
+                                    width: 2000px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">embed google map</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 360px;
+                                    width: 2000px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+
 
                 </div>
                 <!-- about-header-main-img end -->
-
-                <div class="header-right-main">
-                    <h1> Careers </h1>
-                </div>
-                <!-- header-right-main end -->
-
-
             </div>
             <!-- header-right end -->
         </div>
         <!-- header end -->
 
 
-        <div class="job-offer-section">
-            <div class="job-offer-title">
-                <h1>JOB OFFERS</h1>
-            </div>
-            <!-- job-offer-title end -->
-            <div class="job-offer-parah">
-                <p>As a thriving Business law firm, Abdelaziz <br> Alhanaee is always on the lookout for <br>
-                    exceptionally
-                    talented lawyers to join our Team</p>
-            </div>
-            <!-- job-offer-parah end -->
-            <div class="submit-cv-section">
-                <div class="associate">
-                    <div class="info">
-                        <h1>Associate ( male/Female )</h1>
-                        <p>We are looking for an Arabic speaking associate with a good command of Arabic and English.
-                        </p>
+        <div class="contact-section">
+            <div class="contact">
+                <h1 data-aos="fade-down" data-aos-duration="1000">Get in touch</h1>
+                <p data-aos="fade-down" data-aos-duration="500">We'd like to <br>
+                    speak with you</p>
+                <div class="left-right">
+                    <div class="left">
+                        <div class="gmail">
+                            <img src="/images/gmail.svg" data-aos="fade-right">
+                            <span data-aos="fade-left">info@alhanaee.com</span>
+                        </div>
+                        <div class="phone">
+                            <img src="/images/phone.svg" data-aos="fade-right">
+                            <span data-aos="fade-left">+971 4 333 3333</span>
+                        </div>
+                        <div class="location">
+                            <img src="/images/location.svg" data-aos="fade-right">
+                            <span data-aos="fade-left">38th Floor, Single Business Tower, <br>
+                                Sheikh Zayed Road, Dubai, UAE P.O.Box# 113919</span>
+                        </div>
                     </div>
-                    <!-- info end -->
-                    <a href="mailto:laimukkhanthird@gmail.com"><button>Submit CV</button></a>
-                </div>
-                <!-- associate end -->
-                <div class="graphic-designer">
-                    <div class="info">
-                        <h1>Graphic Designer ( male/Female )</h1>
-                        <p>We are seeking a creative and skilled Graphic Designer with proficiency in Adobe Creative
-                            Suite, particularly Photoshop and Illustrator. The ideal candidate should have a strong
-                            portfolio demonstrating their ability to create visually appealing designs for both print
-                            and digital media.
-                        </p>
+                    <!-- left end -->
+                    <div class="right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Name" data-aos="fade-up">
+                            <input type="text" name="email" placeholder="Email Address" data-aos="fade-up">
+                            <input type="number" name="phone" placeholder="Phone Number" data-aos="fade-up">
+                            <input type="text" name="" placeholder="Subject" data-aos="fade-up">
+                            <textarea name="text" placeholder="Message" data-aos="fade-up"></textarea>
+                            <button data-aos="fade-up">Submit</button>
+                        </form>
                     </div>
-                    <!-- info end -->
-                    <a href="mailto:laimukkhanthird@gmail.com"><button>Submit CV</button></a>
+                    <!-- right end -->
                 </div>
-                <!-- Graphic-Designer end -->
             </div>
-            <!-- submit-cv-section  -->
         </div>
-        <!-- job-offer-section end -->
-
+        <!-- contact-section end -->
 
 
 
@@ -212,7 +225,11 @@
     <!-- container end -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/javaScript/jobs.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="/javaScript/script.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         loop: true,

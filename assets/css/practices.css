@@ -157,54 +157,157 @@ body {
     font-weight: 400;
     line-height: 90px; }
 
+.legal-service-section {
+  width: 100%;
+  background-color: #1a1a1af4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white; }
+  .legal-service-section .legal-service {
+    width: 75%;
+    margin: auto; }
+    .legal-service-section .legal-service h1 {
+      color: #6B3117;
+      font-size: 20px;
+      letter-spacing: 5px;
+      font-weight: 400; }
+    .legal-service-section .legal-service P {
+      font-size: 65px;
+      font-weight: 300;
+      margin-top: 20px;
+      word-spacing: -5px; }
+    .legal-service-section .legal-service .legal-service-image {
+      overflow: hidden;
+      position: relative;
+      margin-top: 80px; }
+      .legal-service-section .legal-service .legal-service-image img {
+        width: 100%;
+        cursor: pointer; }
+      .legal-service-section .legal-service .legal-service-image .img-style {
+        position: absolute;
+        top: 0;
+        width: 60px;
+        height: 100vh;
+        background-color: #5a2a14;
+        z-index: 2; }
+
+.legal-advise-section {
+  width: 100%;
+  background-color: #1a1a1af4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white; }
+  .legal-advise-section .legal-advise {
+    width: 75%;
+    margin: auto; }
+    .legal-advise-section .legal-advise h1 {
+      color: #6B3117;
+      font-size: 20px;
+      letter-spacing: 5px;
+      font-weight: 400; }
+    .legal-advise-section .legal-advise P {
+      font-size: 45px;
+      font-weight: 300;
+      margin-top: 20px;
+      word-spacing: -5px; }
+    .legal-advise-section .legal-advise .legal-advise-info {
+      display: flex;
+      gap: 80px;
+      margin-top: 50px; }
+      .legal-advise-section .legal-advise .legal-advise-info .left {
+        width: 50%; }
+        .legal-advise-section .legal-advise .legal-advise-info .left p {
+          font-size: 16px;
+          font-weight: 300;
+          color: #d8d8d8;
+          line-height: 20px;
+          word-spacing: 1px; }
+      .legal-advise-section .legal-advise .legal-advise-info .right {
+        width: 50%; }
+        .legal-advise-section .legal-advise .legal-advise-info .right p {
+          font-size: 16px;
+          font-weight: 300;
+          color: #d8d8d8;
+          line-height: 20px;
+          word-spacing: 1px; }
+        .legal-advise-section .legal-advise .legal-advise-info .right .legal-advise-links {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #858585;
+          padding-top: 20px; }
+          .legal-advise-section .legal-advise .legal-advise-info .right .legal-advise-links span {
+            border: 1px solid #adadad;
+            border-radius: 40px;
+            padding: 8px 20px;
+            cursor: pointer; }
+            .legal-advise-section .legal-advise .legal-advise-info .right .legal-advise-links span:hover {
+              background-color: black; }
+            .legal-advise-section .legal-advise .legal-advise-info .right .legal-advise-links span a {
+              text-decoration: none;
+              color: #b1b1b1;
+              font-weight: 400; }
+
 .articles-section {
   width: 100%;
   background-color: #1a1a1af4;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  z-index: 1; }
   .articles-section .articles {
     width: 75%;
     margin: auto; }
+    .articles-section .articles h1 {
+      font-size: 65px;
+      font-weight: 300;
+      color: white;
+      line-height: 65px;
+      margin-bottom: 50px; }
     .articles-section .articles .article-main {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
       gap: 100px;
       margin-bottom: 100px; }
       .articles-section .articles .article-main .article {
         width: 50%; }
         .articles-section .articles .article-main .article .image-section {
           overflow: hidden;
-          position: relative; }
+          position: relative;
+          height: 320px; }
           .articles-section .articles .article-main .article .image-section img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             cursor: pointer; }
-          .articles-section .articles .article-main .article .image-section .img-style {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 30px;
-            background-color: #8E492B;
-            z-index: 2; }
-          .articles-section .articles .article-main .article .image-section p {
-            position: absolute;
-            bottom: 5px;
-            left: 15px;
-            font-size: 16px;
-            color: white;
-            z-index: 3; }
         .articles-section .articles .article-main .article h3 {
-          font-size: 18px;
-          color: #8E492B;
+          font-size: 42px;
+          font-weight: 300;
+          color: white;
           margin-top: 40px;
           cursor: pointer; }
         .articles-section .articles .article-main .article a {
           text-decoration: none; }
           .articles-section .articles .article-main .article a p {
-            font-size: 25px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 300;
             margin-top: 10px;
             cursor: pointer;
-            color: #b8b8b8; }
+            color: #ebebeb; }
+        .articles-section .articles .article-main .article a button {
+          margin-top: 50px;
+          width: 175px;
+          height: 38px;
+          border: none;
+          outline: none;
+          border-radius: 40px;
+          background-color: black;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: 400; }
+          .articles-section .articles .article-main .article a button:hover {
+            border: 1px solid #6b6b6b; }
 
 .uptodate {
   width: 100%;
@@ -353,4 +456,4 @@ body {
   justify-content: space-evenly;
   align-items: center; }
 
-/*# sourceMappingURL=news-article.css.map */
+/*# sourceMappingURL=practices.css.map */
