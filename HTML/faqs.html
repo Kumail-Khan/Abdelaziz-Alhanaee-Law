@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/basic.css" />
     <script src="https://kit.fontawesome.com/9fa5e4001d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -97,7 +97,7 @@
         <div class="faqs">
             <div class="faqs-parent">
                 <div class="faqs-section">
-                    <div class="faq">
+                    <div class="faq" data-aos="fade-up" data-aos-duration="500">
                         <div class="question">
                             <h2> Shall people with no id obtain a non-work certificate from the notary public?</h2>
                             <i class="fa-solid fa-angle-right"></i>
@@ -113,7 +113,7 @@
                         <!-- answer end -->
                     </div>
                     <!-- faq-1 end -->
-                    <div class="faq">
+                    <div class="faq" data-aos="fade-up" data-aos-duration="500">
                         <div class="question">
                             <h2>May a penal claim be instituted if there is a statement of indebtedness?</h2>
                             <i class="fa-solid fa-angle-right"></i>
@@ -129,7 +129,7 @@
                         <!-- answer end -->
                     </div>
                     <!-- faq-2 end -->
-                    <div class="faq">
+                    <div class="faq" data-aos="fade-up" data-aos-duration="500">
                         <div class="question">
                             <h2>What are the requirements for the endorsement of contracts?</h2>
                             <i class="fa-solid fa-angle-right"></i>
@@ -145,7 +145,7 @@
                         <!-- answer end -->
                     </div>
                     <!-- faq-3 end -->
-                    <div class="faq">
+                    <div class="faq" data-aos="fade-up" data-aos-duration="500">
                         <div class="question">
                             <h2>What are the requirements of a power of attorney?</h2>
                             <i class="fa-solid fa-angle-right"></i>
@@ -161,7 +161,7 @@
                         <!-- answer end -->
                     </div>
                     <!-- faq-4 end -->
-                    <div class="faq">
+                    <div class="faq" data-aos="fade-up" data-aos-duration="500">
                         <div class="question">
                             <h2>What are the procedures to be followed in commercial agencies?</h2>
                             <i class="fa-solid fa-angle-right"></i>
@@ -261,6 +261,10 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/javaScript/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         loop: true,
