@@ -87,7 +87,7 @@ body {
     background-color: #5a2a14;
     position: absolute;
     top: 0;
-    left: -580px;
+    left: -680px;
     position: fixed;
     transition: 0.3s; }
     .header .sidebar-menu ul a {
@@ -97,7 +97,7 @@ body {
         font-size: 25px;
         font-weight: 300;
         color: white;
-        margin-top: 15px;
+        margin-top: 30px;
         cursor: pointer;
         text-transform: uppercase; }
         .header .sidebar-menu ul a li:hover {

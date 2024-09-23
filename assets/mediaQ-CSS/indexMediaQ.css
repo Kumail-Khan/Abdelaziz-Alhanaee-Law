@@ -1,3 +1,386 @@
+@media only screen and (max-width: 1300px) {
+  .about-us .about-top div h1 {
+    font-size: 120px;
+    font-weight: 300; }
+  .about-us .about-top div p {
+    margin-bottom: 30px;
+    font-size: 20px; }
+  .about-us .about-bottom .bottom-image {
+    height: 410px;
+    width: 50%; }
+  .about-us .about-bottom .bottom-info {
+    width: 50%;
+    padding-right: 100px;
+    padding-left: 50px; }
+    .about-us .about-bottom .bottom-info p {
+      font-size: 22px; }
+    .about-us .about-bottom .bottom-info .info-button button {
+      padding: 15px;
+      width: 150px;
+      font-size: 14px;
+      font-weight: 400; }
+    .about-us .about-bottom .bottom-info .info-button p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 15px; }
 
+  .faqs .faqs-parent {
+    width: 80%; }
+    .faqs .faqs-parent .faqs-section {
+      margin-left: 150px;
+      width: 50%;
+      margin-right: 500px; }
+      .faqs .faqs-parent .faqs-section h1 {
+        font-size: 22px;
+        font-weight: 300; }
+      .faqs .faqs-parent .faqs-section .faq.active .answer {
+        max-height: 500px;
+        margin: 20px 0; }
+      .faqs .faqs-parent .faqs-section .faq.active i {
+        transform: rotate(90deg); }
+      .faqs .faqs-parent .faqs-section .faq {
+        border-bottom: 1px solid rgba(184, 184, 184, 0.331); }
+        .faqs .faqs-parent .faqs-section .faq .question {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 500px;
+          height: 80px;
+          cursor: pointer; }
+          .faqs .faqs-parent .faqs-section .faq .question h2 {
+            font-size: 25px;
+            font-weight: 500; }
+          .faqs .faqs-parent .faqs-section .faq .question i {
+            font-size: 18px;
+            width: 32px;
+            height: 32px; }
+        .faqs .faqs-parent .faqs-section .faq .answer {
+          font-size: 16px;
+          font-weight: 400;
+          word-spacing: 1px;
+          line-height: 20px; }
+    .faqs .faqs-parent img {
+      position: absolute;
+      right: 80px;
+      bottom: -100px;
+      width: 450px; }
+
+  .testamonials {
+    padding-top: 250px; }
+    .testamonials .testamonial-parent .left-testamonials h1 {
+      font-size: 38px;
+      font-weight: 300; }
+    .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide p {
+      font-size: 22px;
+      font-weight: 400;
+      margin-right: 80px; }
+    .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile {
+      display: flex;
+      margin-top: 50px; }
+      .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info {
+        margin-top: 10px;
+        margin-left: 10px; }
+        .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info h2 {
+          font-size: 16px;
+          font-weight: 700; }
+        .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info p {
+          font-size: 16px; }
+
+  .articles .articles-section .article-header h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #8E492B; }
+  .articles .articles-section .article-header button {
+    padding: 15px;
+    width: 250px;
+    font-size: 14px; }
+  .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article {
+    width: 50%; }
+    .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article img {
+      width: 100%;
+      cursor: pointer; }
+    .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article h3 {
+      font-size: 18px;
+      color: #8E492B;
+      margin-top: 30px;
+      cursor: pointer; }
+    .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article p {
+      font-size: 20px;
+      font-weight: 400; }
+
+  .teams .teams-section .left-teams .left-team-parent h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: white;
+    margin-top: 100px; }
+  .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2.active .answer {
+    max-height: 500px;
+    margin: 20px 0; }
+  .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2.active i {
+    transform: rotate(90deg); }
+  .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 {
+    border-bottom: 1px solid rgba(177, 177, 177, 0.418); }
+    .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+      cursor: pointer; }
+      .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left {
+        display: flex; }
+        .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left h2 {
+          font-size: 25px; }
+        .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left p {
+          font-size: 10px;
+          color: #8E492B;
+          margin-top: 15px; }
+      .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .right i {
+        font-size: 18px;
+        width: 30px;
+        height: 30px; }
+    .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .answer {
+      font-size: 16px;
+      word-spacing: 1px; }
+  .teams .teams-section .right-teams img {
+    right: 40px;
+    width: 400px; }
+
+  .footer .footer-section .links .quick-links,
+  .footer .footer-section .links .experties-links {
+    margin-right: 50px; }
+    .footer .footer-section .links .quick-links h1,
+    .footer .footer-section .links .experties-links h1 {
+      font-size: 20px;
+      font-weight: 400; }
+    .footer .footer-section .links .quick-links ul li a,
+    .footer .footer-section .links .experties-links ul li a {
+      font-size: 14px; }
+  .footer .footer-section .social-media {
+    padding-top: 10px;
+    gap: 100px; }
+    .footer .footer-section .social-media .contact-number p {
+      font-size: 16px; }
+    .footer .footer-section .social-media .social-logo img {
+      width: 30px; } }
+@media only screen and (max-width: 1100px) {
+  .header .header-left {
+    width: 100%;
+    height: 130px;
+    padding: 18px;
+    padding-bottom: 0;
+    align-items: end;
+    z-index: 15;
+    background-color: #1e1e1e; }
+    .header .header-left .menu {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      margin-right: 50px; }
+    .header .header-left .cancel {
+      font-size: 35px;
+      color: white;
+      cursor: pointer;
+      display: none;
+      margin-right: 50px; }
+    .header .header-left .search {
+      display: none; }
+    .header .header-left .cancel-2 {
+      display: none; }
+  .header .search-box {
+    display: none; }
+  .header .sidebar-menu {
+    width: 500px; }
+
+  .header-right-top {
+    left: 100px;
+    z-index: 16;
+    position: fixed; }
+    .header-right-top h2 {
+      color: white;
+      font-weight: 300;
+      font-size: 30px;
+      letter-spacing: 4px; }
+    .header-right-top nav .line-1 {
+      left: 0px;
+      width: 90px; }
+    .header-right-top nav .line-2 {
+      position: absolute;
+      top: -12px;
+      left: 230px;
+      color: white;
+      width: 90px;
+      height: 2px; }
+
+  .header-right-main {
+    position: absolute;
+    top: 330px;
+    left: 70px;
+    color: white;
+    z-index: 5; }
+    .header-right-main h1 {
+      font-size: 100px;
+      font-weight: 500;
+      line-height: 90px;
+      color: white; }
+
+  .about-us .about-top div {
+    margin-top: 30px; }
+  .about-us .about-bottom .bottom-image {
+    height: 380px;
+    width: 50%;
+    margin-left: 0; }
+  .about-us .about-bottom .bottom-info {
+    width: 50%;
+    padding-right: 50px;
+    padding-left: 50px; }
+    .about-us .about-bottom .bottom-info p {
+      font-size: 18px; }
+    .about-us .about-bottom .bottom-info .info-button button {
+      padding: 14px;
+      width: 130px;
+      font-size: 12px;
+      font-weight: 400; }
+    .about-us .about-bottom .bottom-info .info-button p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 10px; }
+
+  .faqs .faqs-parent {
+    width: 80%; }
+    .faqs .faqs-parent .faqs-section {
+      margin-left: 10px;
+      width: 50%;
+      margin-right: 450px; }
+      .faqs .faqs-parent .faqs-section h1 {
+        font-size: 22px;
+        font-weight: 300; }
+      .faqs .faqs-parent .faqs-section .faq.active .answer {
+        max-height: 500px;
+        margin: 20px 0; }
+      .faqs .faqs-parent .faqs-section .faq.active i {
+        transform: rotate(90deg); }
+      .faqs .faqs-parent .faqs-section .faq {
+        border-bottom: 1px solid rgba(184, 184, 184, 0.331); }
+        .faqs .faqs-parent .faqs-section .faq .question {
+          width: 400px;
+          height: 80px;
+          cursor: pointer; }
+          .faqs .faqs-parent .faqs-section .faq .question h2 {
+            font-size: 22px;
+            font-weight: 500; }
+        .faqs .faqs-parent .faqs-section .faq .answer {
+          font-weight: 300; }
+    .faqs .faqs-parent img {
+      right: 20px;
+      width: 400px; }
+
+  .testamonials {
+    padding-top: 250px; }
+    .testamonials .testamonial-parent .left-testamonials {
+      margin-left: 0; }
+      .testamonials .testamonial-parent .left-testamonials h1 {
+        font-size: 38px;
+        font-weight: 300; }
+    .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial {
+      margin-bottom: 0px;
+      padding-bottom: 50px; }
+      .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 80px; }
+      .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile {
+        display: flex;
+        margin-top: 50px; }
+        .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info {
+          margin-top: 10px;
+          margin-left: 10px; }
+          .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info h2 {
+            font-size: 14px;
+            font-weight: 700; }
+          .testamonials .testamonial-parent .right-testamonials .mySwiper-testamonial .swiper-wrapper .swiper-slide .profile .info p {
+            font-size: 14px; }
+
+  .articles .articles-section .article-header {
+    margin-left: 0px; }
+    .articles .articles-section .article-header h1 {
+      font-size: 40px;
+      font-weight: 300;
+      color: #8E492B; }
+    .articles .articles-section .article-header button {
+      padding: 15px;
+      width: 250px;
+      font-size: 14px; }
+  .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main {
+    margin-left: 0px; }
+    .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article {
+      width: 50%; }
+      .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article img {
+        width: 100%;
+        cursor: pointer; }
+      .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article h3 {
+        font-size: 18px;
+        color: #8E492B;
+        margin-top: 30px;
+        cursor: pointer; }
+      .articles .articles-section .mySwiper-article .swiper-wrapper .swiper-slide .article-main .article p {
+        font-size: 20px;
+        font-weight: 400; }
+
+  .teams .teams-section .left-teams {
+    margin-left: 0px; }
+    .teams .teams-section .left-teams .left-team-parent h1 {
+      font-size: 42px;
+      font-weight: 300;
+      color: white;
+      margin-top: 100px; }
+    .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2.active .answer {
+      max-height: 500px;
+      margin: 20px 0; }
+    .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2.active i {
+      transform: rotate(90deg); }
+    .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 {
+      border-bottom: 1px solid rgba(177, 177, 177, 0.418); }
+      .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        cursor: pointer; }
+        .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left {
+          display: flex; }
+          .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left h2 {
+            font-size: 22px; }
+          .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .left p {
+            font-size: 10px;
+            color: #8E492B;
+            margin-top: 15px; }
+        .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .question .right i {
+          font-size: 18px;
+          width: 30px;
+          height: 30px; }
+      .teams .teams-section .left-teams .left-team-parent .teams-faqs .faq2 .answer {
+        font-size: 16px;
+        word-spacing: 1px; }
+  .teams .teams-section .right-teams img {
+    right: 20px;
+    width: 380px; }
+
+  .footer .footer-section .links .quick-links,
+  .footer .footer-section .links .experties-links {
+    margin-right: 50px; }
+    .footer .footer-section .links .quick-links h1,
+    .footer .footer-section .links .experties-links h1 {
+      font-size: 20px;
+      font-weight: 400; }
+    .footer .footer-section .links .quick-links ul li a,
+    .footer .footer-section .links .experties-links ul li a {
+      font-size: 14px; }
+  .footer .footer-section .social-media {
+    padding-top: 10px;
+    gap: 100px; }
+    .footer .footer-section .social-media .contact-number p {
+      font-size: 16px; }
+    .footer .footer-section .social-media .social-logo img {
+      width: 30px; } }
 
 /*# sourceMappingURL=indexMediaQ.css.map */

@@ -8,12 +8,12 @@ let searchBox = document.querySelector(".search-box");
 
 // functions
 function sidebarMenu() {
-    if (sidebar.style.left === "-580px" || sidebar.style.left === "") {
+    if (sidebar.style.left === "-680px" || sidebar.style.left === "") {
         sidebar.style.left = "0px";
         cancelBtn.style.display = "block";
         menuBtn.style.display = "none";
     } else {
-        sidebar.style.left = "-580px";
+        sidebar.style.left = "-680px";
         cancelBtn.style.display = "none";
         menuBtn.style.display = "block";
     }

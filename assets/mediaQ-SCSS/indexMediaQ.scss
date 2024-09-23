@@ -1,0 +1,873 @@
+@media only screen and (max-width:1300px) {
+
+
+
+    .about-us {
+        .about-top {
+            div {
+                h1 {
+                    font-size: 120px;
+                    font-weight: 300;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .about-bottom {
+            .bottom-image {
+                height: 410px;
+                width: 50%;
+            }
+
+            .bottom-info {
+                width: 50%;
+                padding-right: 100px;
+                padding-left: 50px;
+
+                p {
+                    font-size: 22px;
+                }
+
+                .info-button {
+                    button {
+                        padding: 15px;
+                        width: 150px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    // about us end
+
+
+    .faqs {
+        .faqs-parent {
+            width: 80%;
+
+            .faqs-section {
+                margin-left: 150px;
+                width: 50%;
+                margin-right: 500px;
+
+                h1 {
+                    font-size: 22px;
+                    font-weight: 300;
+
+                }
+
+                .faq.active .answer {
+                    max-height: 500px;
+                    margin: 20px 0;
+
+                }
+
+                .faq.active i {
+                    transform: rotate(90deg);
+
+                }
+
+                .faq {
+                    border-bottom: 1px solid rgba(184, 184, 184, 0.331);
+
+                    .question {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 500px;
+                        height: 80px;
+
+                        cursor: pointer;
+
+                        h2 {
+                            font-size: 25px;
+                            font-weight: 500;
+                        }
+
+                        i {
+
+                            font-size: 18px;
+                            width: 32px;
+                            height: 32px;
+
+                        }
+                    }
+
+                    .answer {
+                        font-size: 16px;
+                        font-weight: 400;
+                        word-spacing: 1px;
+                        line-height: 20px;
+
+                    }
+
+
+                }
+            }
+
+            img {
+                position: absolute;
+                right: 80px;
+                bottom: -100px;
+                width: 450px;
+            }
+        }
+    }
+
+    // faqs end
+
+
+
+
+    .testamonials {
+        padding-top: 250px;
+
+
+        .testamonial-parent {
+
+            .left-testamonials {
+
+
+                h1 {
+                    font-size: 38px;
+                    font-weight: 300;
+                }
+            }
+
+            .right-testamonials {
+
+
+                .mySwiper-testamonial {
+
+
+                    .swiper-wrapper {
+
+                        .swiper-slide {
+
+
+                            p {
+                                font-size: 22px;
+                                font-weight: 400;
+                                margin-right: 80px;
+                            }
+
+                            .profile {
+                                display: flex;
+                                margin-top: 50px;
+
+                                .info {
+                                    margin-top: 10px;
+                                    margin-left: 10px;
+
+                                    h2 {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // testamonials end
+
+
+    .articles {
+
+        .articles-section {
+
+            .article-header {
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: #8E492B;
+                }
+
+                button {
+                    padding: 15px;
+                    width: 250px;
+                    font-size: 14px;
+
+                }
+            }
+
+
+
+            .mySwiper-article {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .article-main {
+
+                            .article {
+                                width: 50%;
+
+                                img {
+                                    width: 100%;
+                                    cursor: pointer;
+
+                                }
+
+                                h3 {
+                                    font-size: 18px;
+                                    color: #8E492B;
+                                    margin-top: 30px;
+                                    cursor: pointer;
+                                }
+
+                                p {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // articles end
+
+
+    .teams {
+
+        .teams-section {
+            .left-teams {
+                .left-team-parent {
+
+
+                    h1 {
+                        font-size: 42px;
+                        font-weight: 300;
+                        color: white;
+                        margin-top: 100px;
+                    }
+
+                    .teams-faqs {
+                        .faq2.active .answer {
+                            max-height: 500px;
+                            margin: 20px 0;
+
+                        }
+
+                        .faq2.active i {
+                            transform: rotate(90deg);
+
+                        }
+
+                        .faq2 {
+
+
+                            border-bottom: 1px solid rgba(177, 177, 177, 0.418);
+
+                            .question {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 120px;
+                                cursor: pointer;
+
+                                .left {
+                                    display: flex;
+
+                                    h2 {
+                                        font-size: 25px;
+
+                                    }
+
+                                    p {
+                                        font-size: 10px;
+
+                                        color: #8E492B;
+                                        margin-top: 15px;
+
+                                    }
+                                }
+
+                                .right {
+                                    i {
+
+                                        font-size: 18px;
+                                        width: 30px;
+                                        height: 30px;
+
+                                    }
+                                }
+                            }
+
+                            .answer {
+                                font-size: 16px;
+                                word-spacing: 1px;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            .right-teams {
+
+                img {
+                    right: 40px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    // teams end
+
+
+    .footer {
+        .footer-section {
+            .links {
+
+                .quick-links,
+                .experties-links {
+                    margin-right: 50px;
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    ul {
+                        li {
+                            a {
+
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social-media {
+                padding-top: 10px;
+                gap: 100px;
+
+                .contact-number {
+                    p {
+                        font-size: 16px;
+
+                    }
+                }
+
+                .social-logo {
+
+
+                    img {
+                        width: 30px;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    // footer end
+
+
+
+}
+
+
+
+@media only screen and (max-width:1100px) {
+
+
+
+    .header {
+        .header-left {
+            width: 100%;
+            height: 130px;
+            padding: 18px;
+            padding-bottom: 0;
+            align-items: end;
+            z-index: 15;
+            background-color: #1e1e1e;
+
+            .menu {
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+                margin-right: 50px;
+            }
+
+            .cancel {
+                font-size: 35px;
+                color: white;
+                cursor: pointer;
+                display: none;
+                margin-right: 50px;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .cancel-2 {
+                display: none;
+            }
+        }
+
+        .search-box {
+            display: none;
+        }
+
+        .sidebar-menu {
+            width: 500px;
+        }
+
+    }
+
+    .header-right-top {
+        left: 100px;
+        z-index: 16;
+        position: fixed;
+
+        h2 {
+
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            letter-spacing: 4px;
+        }
+
+        nav {
+            .line-1 {
+                left: 0px;
+                width: 90px;
+            }
+
+            .line-2 {
+                position: absolute;
+                top: -12px;
+                left: 230px;
+                color: white;
+                width: 90px;
+                height: 2px;
+            }
+
+        }
+    }
+
+    .header-right-main {
+        position: absolute;
+        top: 330px;
+        left: 70px;
+        color: white;
+        z-index: 5;
+
+        h1 {
+            font-size: 100px;
+            font-weight: 500;
+            line-height: 90px;
+            color: white;
+        }
+    }
+
+    // header end
+
+
+
+    .about-us {
+        .about-top {
+            div {
+                margin-top: 30px;
+            }
+        }
+
+        .about-bottom {
+
+            .bottom-image {
+                height: 380px;
+                width: 50%;
+                margin-left: 0;
+            }
+
+            .bottom-info {
+                width: 50%;
+                padding-right: 50px;
+                padding-left: 50px;
+
+                p {
+                    font-size: 18px;
+                }
+
+                .info-button {
+                    button {
+                        padding: 14px;
+                        width: 130px;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // about us end
+
+
+    .faqs {
+        .faqs-parent {
+            width: 80%;
+
+            .faqs-section {
+                margin-left: 10px;
+                width: 50%;
+                margin-right: 450px;
+
+                h1 {
+                    font-size: 22px;
+                    font-weight: 300;
+
+                }
+
+                .faq.active .answer {
+                    max-height: 500px;
+                    margin: 20px 0;
+
+                }
+
+                .faq.active i {
+                    transform: rotate(90deg);
+
+                }
+
+                .faq {
+                    border-bottom: 1px solid rgba(184, 184, 184, 0.331);
+
+                    .question {
+                        width: 400px;
+                        height: 80px;
+
+                        cursor: pointer;
+
+                        h2 {
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+
+                    }
+
+                    .answer {
+                        font-weight: 300;
+                    }
+
+
+                }
+            }
+
+            img {
+                right: 20px;
+                width: 400px;
+            }
+        }
+    }
+
+    // faqs end
+
+
+
+
+    .testamonials {
+        padding-top: 250px;
+
+
+        .testamonial-parent {
+
+            .left-testamonials {
+
+                margin-left: 0;
+
+                h1 {
+                    font-size: 38px;
+                    font-weight: 300;
+                }
+            }
+
+            .right-testamonials {
+
+
+                .mySwiper-testamonial {
+                    margin-bottom: 0px;
+                    padding-bottom: 50px;
+
+                    .swiper-wrapper {
+
+                        .swiper-slide {
+
+
+                            p {
+                                font-size: 18px;
+                                font-weight: 400;
+                                margin-right: 80px;
+                            }
+
+                            .profile {
+                                display: flex;
+                                margin-top: 50px;
+
+                                .info {
+                                    margin-top: 10px;
+                                    margin-left: 10px;
+
+                                    h2 {
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                    }
+
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // testamonials end
+
+
+    .articles {
+
+        .articles-section {
+
+            .article-header {
+                margin-left: 0px;
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: #8E492B;
+                }
+
+                button {
+                    padding: 15px;
+                    width: 250px;
+                    font-size: 14px;
+
+                }
+            }
+
+
+
+            .mySwiper-article {
+
+
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .article-main {
+                            margin-left: 0px;
+
+                            .article {
+                                width: 50%;
+
+                                img {
+                                    width: 100%;
+                                    cursor: pointer;
+
+                                }
+
+                                h3 {
+                                    font-size: 18px;
+                                    color: #8E492B;
+                                    margin-top: 30px;
+                                    cursor: pointer;
+                                }
+
+                                p {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // articles end
+
+
+    .teams {
+
+        .teams-section {
+            .left-teams {
+                margin-left: 0px;
+
+                .left-team-parent {
+
+
+                    h1 {
+                        font-size: 42px;
+                        font-weight: 300;
+                        color: white;
+                        margin-top: 100px;
+                    }
+
+                    .teams-faqs {
+                        .faq2.active .answer {
+                            max-height: 500px;
+                            margin: 20px 0;
+
+                        }
+
+                        .faq2.active i {
+                            transform: rotate(90deg);
+
+                        }
+
+                        .faq2 {
+
+
+                            border-bottom: 1px solid rgba(177, 177, 177, 0.418);
+
+                            .question {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 120px;
+                                cursor: pointer;
+
+                                .left {
+                                    display: flex;
+
+                                    h2 {
+                                        font-size: 22px;
+
+                                    }
+
+                                    p {
+                                        font-size: 10px;
+
+                                        color: #8E492B;
+                                        margin-top: 15px;
+
+                                    }
+                                }
+
+                                .right {
+                                    i {
+
+                                        font-size: 18px;
+                                        width: 30px;
+                                        height: 30px;
+
+                                    }
+                                }
+                            }
+
+                            .answer {
+                                font-size: 16px;
+                                word-spacing: 1px;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            .right-teams {
+
+                img {
+                    right: 20px;
+                    width: 380px;
+                }
+            }
+        }
+    }
+
+    // teams end
+
+
+    .footer {
+        .footer-section {
+            .links {
+
+                .quick-links,
+                .experties-links {
+                    margin-right: 50px;
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    ul {
+                        li {
+                            a {
+
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social-media {
+                padding-top: 10px;
+                gap: 100px;
+
+                .contact-number {
+                    p {
+                        font-size: 16px;
+
+                    }
+                }
+
+                .social-logo {
+
+
+                    img {
+                        width: 30px;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    // footer end
+
+
+
+}
